@@ -1,0 +1,235 @@
+.news-promo .event-promo__btn {
+    padding-left: 0;
+    padding-right: 24px;
+    width: 252px;
+    justify-content: unset;
+}
+
+.news-promo .event-promo__btn img {
+    width: 52px;
+    height: 52px;
+    rotate: 225deg;
+}
+
+.news-promo .event-promo__wrapper {
+    background-image: url(../img/page-event/event-promo/event-bg-img-promo.svg);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.event-course__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-course__left img {
+    border-radius: 32px;
+    width: 995px;
+    height: 630px;
+}
+
+.event-course__right {
+    max-width: 721px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.event-course__right-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .news-promo .event-promo__btn {
+        padding-right: calc(24 / 19.2 * 1vw);
+        width: calc(252 / 19.2 * 1vw);
+    }
+
+    .news-promo .event-promo__btn img {
+        width: calc(52 / 19.2 * 1vw);
+        height: calc(52 / 19.2 * 1vw);
+    }
+
+    .event-course__left img {
+        border-radius: calc(32 / 19.2 * 1vw);
+        width: calc(995 / 19.2 * 1vw);
+        height: calc(630 / 19.2 * 1vw);
+    }
+
+    .event-course__right {
+        max-width: calc(721 / 19.2 * 1vw);
+        row-gap: calc(48 / 19.2 * 1vw);
+    }
+
+    .event-course__right-text {
+        font-size: calc(24 / 19.2 * 1vw);
+        row-gap: calc(38 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .news-promo .event-promo__btn {
+        padding-left: 0;
+        padding-right: 16px;
+        width: 167px;
+        height: 34px;
+        justify-content: unset;
+    }
+
+    .news-promo .event-promo__btn img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .event-course__left img {
+        border-radius: 21px;
+        width: 663px;
+        height: 420px;
+    }
+
+    .event-course__right {
+        max-width: 481px;
+        row-gap: 32px;
+    }
+
+    .event-course__right-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.33;
+        row-gap: 25px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .news-promo .event-promo__btn {
+        padding-right: calc(16 / 12.8 * 1vw);
+        width: calc(167 / 12.8 * 1vw);
+        height: calc(34 / 12.8 * 1vw);
+    }
+
+    .news-promo .event-promo__btn img {
+        width: calc(34 / 12.8 * 1vw);
+        height: calc(34 / 12.8 * 1vw);
+    }
+
+    .event-course__left img {
+        border-radius: calc(21 / 12.8 * 1vw);
+        width: calc(663 / 12.8 * 1vw);
+        height: calc(420 / 12.8 * 1vw);
+    }
+
+    .event-course__right {
+        max-width: calc(481 / 12.8 * 1vw);
+        row-gap: calc(32 / 12.8 * 1vw);
+    }
+
+    .event-course__right-text {
+        font-size: calc(16 / 12.8 * 1vw);
+        row-gap: calc(25 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .event-promo__wrapper .news-promo__date {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .news-promo .event-promo__btn {
+        position: relative;
+        padding-left: 0;
+        padding-right: 16px;
+        justify-content: flex-end;
+        border-radius: 67px;
+        width: 167px;
+        height: 34px;
+
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .news-promo .event-promo__btn img {
+        position: absolute;
+        left: 0;
+        width: 34px;
+        height: 34px;
+    }
+
+    .event-course__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .event-course__left img {
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+    }
+
+    .event-course__right {
+        max-width: 100%;
+        row-gap: 40px;
+    }
+
+    .event-course__right-text {
+        font-size: 16px;
+        line-height: 1.2;
+        row-gap: 20px;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    /* calc(50 / 4.3 * 1vw) */
+    .event-promo__wrapper .news-promo__date {
+        margin-bottom: calc(15 / 4.3 * 1vw);
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .news-promo .event-promo__btn {
+        padding-right: calc(16 / 4.3 * 1vw);
+        border-radius: calc(67 / 4.3 * 1vw);
+        width: calc(167 / 4.3 * 1vw);
+        height: calc(34 / 4.3 * 1vw);
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .news-promo .event-promo__btn img {
+        width: calc(34 / 4.3 * 1vw);
+        height: calc(34 / 4.3 * 1vw);
+    }
+
+    .event-course__wrapper {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .event-course__left img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    .event-course__right {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .event-course__right-text {
+        font-size: calc(16 / 4.3 * 1vw);
+        row-gap: calc(20 / 4.3 * 1vw);
+    }
+}

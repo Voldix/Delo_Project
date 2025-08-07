@@ -1,0 +1,534 @@
+.desk-none {
+    display: none;
+}
+
+.pomogaem-promo__wrapper {
+    padding: 39px 122px 46px 89px;
+    background-color: #e5edff;
+    border-radius: 64px;
+
+    background-image: url(../img/page-pomogaem/promo/pomogaem-promo-bg-img.svg);
+    background-repeat: no-repeat;
+    background-position: right 100%;
+    background-size: contain;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pomogaem-promo__left {
+    max-width: 814px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+
+.pomogaem-promo__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.pomogaem-promo__right img {
+    width: 587px;
+    height: 709px;
+}
+
+/* Секция с карточками */
+.pomogaem-cards__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.pomogaem-cards__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pomogaem-option-btn {
+    position: relative;
+    border-radius: 32px;
+    padding: 30px;
+    width: 426.5px;
+    height: 183px;
+    background-color: #e5edff;
+    cursor: pointer;
+
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+}
+
+.pomogaem-option-btn svg {
+    fill: #333;
+}
+
+.option-btn-1,
+.option-btn-2,
+.option-btn-3,
+.option-btn-4 {
+    position: absolute;
+    bottom: 0;
+}
+
+.option-btn-1,
+.option-btn-4 {
+    right: 5%;
+}
+
+.option-btn-2 {
+    right: 10%;
+}
+
+.option-btn-3 {
+    right: 0;
+}
+
+.pomogaem-option-btn--active {
+    color: #fff;
+    background-color: #7599e2;
+}
+
+.pomogaem-option-btn--active svg {
+    fill: #fff;
+}
+
+.pomogaem-cards__main {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.pomogaem-card {
+    position: relative;
+    width: 444px;
+}
+
+.pomogaem-card__img {
+    width: 412px;
+    height: 274px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .pomogaem-promo__wrapper {
+        padding: calc(39 / 19.2 * 1vw) calc(122 / 19.2 * 1vw)
+            calc(46 / 19.2 * 1vw) calc(89 / 19.2 * 1vw);
+    }
+
+    .pomogaem-promo__left {
+        max-width: calc(814 / 19.2 * 1vw);
+        row-gap: calc(60 / 19.2 * 1vw);
+    }
+
+    .pomogaem-promo__text {
+        row-gap: calc(30 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .pomogaem-promo__right img {
+        width: calc(587 / 19.2 * 1vw);
+        height: calc(709 / 19.2 * 1vw);
+    }
+
+    /* Секция с карточками */
+    .pomogaem-cards__wrapper {
+        row-gap: calc(50 / 19.2 * 1vw);
+    }
+
+    .pomogaem-option-btn {
+        border-radius: calc(32 / 19.2 * 1vw);
+        padding: calc(30 / 19.2 * 1vw);
+        width: calc(426.5 / 19.2 * 1vw);
+        height: calc(183 / 19.2 * 1vw);
+        font-size: calc(40 / 19.2 * 1vw);
+    }
+
+    .option-btn-1 {
+        width: calc(131 / 19.2 * 1vw);
+        height: calc(164 / 19.2 * 1vw);
+    }
+
+    .option-btn-2 {
+        width: calc(79 / 19.2 * 1vw);
+        height: calc(153 / 19.2 * 1vw);
+    }
+
+    .option-btn-3 {
+        width: calc(173 / 19.2 * 1vw);
+        height: calc(159 / 19.2 * 1vw);
+    }
+
+    .option-btn-4 {
+        width: calc(97 / 19.2 * 1vw);
+        height: calc(152 / 19.2 * 1vw);
+    }
+
+    .pomogaem-cards__main {
+        gap: calc(16 / 19.2 * 1vw);
+        justify-content: space-between;
+    }
+
+    .pomogaem-card {
+        width: calc(444 / 19.2 * 1vw);
+    }
+
+    .pomogaem-card__img {
+        width: calc(412 / 19.2 * 1vw);
+        height: calc(274 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .pomogaem-promo__wrapper {
+        padding: 26px 81px 31px 59px;
+        border-radius: 43px;
+    }
+
+    .pomogaem-promo__left {
+        max-width: 543px;
+        row-gap: 40px;
+    }
+
+    .pomogaem-promo__text {
+        row-gap: 20px;
+        font-size: 16px;
+    }
+
+    .pomogaem-promo__right img {
+        width: 392px;
+        height: 473px;
+    }
+
+    /* Секция с карточками */
+    .pomogaem-cards__wrapper {
+        row-gap: 33px;
+    }
+
+    .pomogaem-option-btn {
+        position: relative;
+        border-radius: 21px;
+        padding: 20px;
+        width: 284px;
+        height: 122px;
+        font-size: 26px;
+    }
+
+    .option-btn-1 {
+        width: 88px;
+        height: 110px;
+    }
+
+    .option-btn-2 {
+        width: 53px;
+        height: 102px;
+    }
+
+    .option-btn-3 {
+        width: 116px;
+        height: 106px;
+    }
+
+    .option-btn-4 {
+        width: 64px;
+        height: 102px;
+    }
+
+    .pomogaem-cards__main {
+        column-gap: 0;
+        row-gap: 11px;
+    }
+
+    .pomogaem-card {
+        position: relative;
+        width: 296px;
+    }
+
+    .pomogaem-card .pomogaem-card__img {
+        width: 275px;
+        height: 183px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .pomogaem-promo__wrapper {
+        padding: calc(26 / 12.8 * 1vw) calc(81 / 12.8 * 1vw)
+            calc(31 / 12.8 * 1vw) calc(59 / 12.8 * 1vw);
+        border-radius: calc(43 / 12.8 * 1vw);
+    }
+
+    .pomogaem-promo__left {
+        max-width: calc(543 / 12.8 * 1vw);
+        row-gap: calc(40 / 12.8 * 1vw);
+    }
+
+    .pomogaem-promo__text {
+        row-gap: calc(20 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .pomogaem-promo__right img {
+        width: calc(392 / 12.8 * 1vw);
+        height: calc(473 / 12.8 * 1vw);
+    }
+
+    /* Секция с карточками */
+    .pomogaem-cards__wrapper {
+        row-gap: calc(33 / 12.8 * 1vw);
+    }
+
+    .pomogaem-option-btn {
+        position: relative;
+        border-radius: calc(21 / 12.8 * 1vw);
+        padding: calc(20 / 12.8 * 1vw);
+        width: calc(284 / 12.8 * 1vw);
+        height: calc(122 / 12.8 * 1vw);
+        font-size: calc(26 / 12.8 * 1vw);
+    }
+
+    .option-btn-1 {
+        width: calc(88 / 12.8 * 1vw);
+        height: calc(110 / 12.8 * 1vw);
+    }
+
+    .option-btn-2 {
+        width: calc(53 / 12.8 * 1vw);
+        height: calc(102 / 12.8 * 1vw);
+    }
+
+    .option-btn-3 {
+        width: calc(116 / 12.8 * 1vw);
+        height: calc(106 / 12.8 * 1vw);
+    }
+
+    .option-btn-4 {
+        width: calc(64 / 12.8 * 1vw);
+        height: calc(102 / 12.8 * 1vw);
+    }
+
+    .pomogaem-cards__main {
+        column-gap: 0;
+        row-gap: calc(11 / 12.8 * 1vw);
+    }
+
+    .pomogaem-card {
+        position: relative;
+        width: calc(296 / 12.8 * 1vw);
+    }
+
+    .pomogaem-card .pomogaem-card__img {
+        width: calc(275 / 12.8 * 1vw);
+        height: calc(183 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .desk-none {
+        display: block;
+    }
+
+    .mob-none {
+        display: none;
+    }
+
+    .pomogaem-promo__wrapper {
+        padding: 25px;
+        border-radius: 25px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .pomogaem-promo__left {
+        max-width: 100%;
+        row-gap: 40px;
+    }
+
+    .pomogaem-promo__text {
+        row-gap: 20px;
+        font-size: 12px;
+        line-height: 1.38;
+    }
+
+    .pomogaem-promo__right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Секция с карточками */
+    .pomogaem-cards__wrapper {
+        row-gap: 25px;
+    }
+
+    .swiper-4 {
+        height: 107px;
+    }
+
+    .swiper-4 .swiper-slide {
+        width: 249px;
+    }
+
+    .pomogaem-cards__top {
+        display: block;
+    }
+
+    .pomogaem-option-btn {
+        position: relative;
+        border-radius: 19px;
+        padding: 17px;
+        width: 249px;
+        height: 106px;
+        background-color: #e5edff;
+        cursor: pointer;
+
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+    }
+
+    .pomogaem-option-btn p {
+        width: 150px;
+    }
+
+    .pomogaem-option-btn svg {
+        fill: #333;
+    }
+
+    .option-btn-1 {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        width: 77px;
+        height: 96px;
+    }
+
+    .option-btn-2 {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        width: 77px;
+        height: 96px;
+    }
+    
+    .option-btn-3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 110px;
+        height: 96px;
+    }
+
+    .option-btn-4 {
+        position: absolute;
+        bottom: 0;
+        right: 5%;
+        width: 64px;
+        height: 96px;
+    }
+
+    .pomogaem-option-btn--active {
+        color: #fff;
+        background-color: #7599e2;
+    }
+    
+    .pomogaem-option-btn--active svg {
+        fill: #fff;
+    }
+
+    .pomogaem-cards__main {
+        flex-direction: column;
+        row-gap: 23px;
+    }
+
+    .pomogaem-card {
+        width: 100%;
+    }
+
+    .pomogaem-card .pomogaem-card__img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    .pomogaem-promo__wrapper {
+        padding: calc(25 / 4.3 * 1vw);
+        border-radius: calc(25 / 4.3 * 1vw);
+        row-gap: calc(25 / 4.3 * 1vw);
+    }
+
+    .pomogaem-promo__left {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .pomogaem-promo__text {
+        row-gap: calc(20 / 4.3 * 1vw);
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    /* Секция с карточками */
+    .pomogaem-cards__wrapper {
+        row-gap: calc(25 / 4.3 * 1vw);
+    }
+
+    .swiper-4 {
+        height: calc(107 / 4.3 * 1vw);
+    }
+
+    .swiper-4 .swiper-slide {
+        width: calc(249 / 4.3 * 1vw);
+    }
+
+    .pomogaem-option-btn {
+        position: relative;
+        border-radius: calc(19 / 4.3 * 1vw);
+        padding: calc(17 / 4.3 * 1vw);
+        width: calc(249 / 4.3 * 1vw);
+        height: calc(106 / 4.3 * 1vw);
+        font-size: calc(23 / 4.3 * 1vw);
+    }
+
+    .pomogaem-option-btn p {
+        width: calc(150 / 4.3 * 1vw);
+    }
+
+
+    .option-btn-1 {
+        width: calc(77 / 4.3 * 1vw);
+        height: calc(96 / 4.3 * 1vw);
+    }
+
+    .option-btn-2 {
+        width: calc(77 / 4.3 * 1vw);
+        height: calc(96 / 4.3 * 1vw);
+    }
+    
+    .option-btn-3 {
+        width: calc(110 / 4.3 * 1vw);
+        height: calc(96 / 4.3 * 1vw);
+    }
+
+    .option-btn-4 {
+        width: calc(64 / 4.3 * 1vw);
+        height: calc(96 / 4.3 * 1vw);
+    }
+
+    .pomogaem-cards__main {
+        row-gap: calc(23 / 4.3 * 1vw);
+    }
+}

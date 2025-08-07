@@ -1,0 +1,98 @@
+.send-help-promo .send-help-promo__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1157px;
+    height: 670px;
+}
+
+.send-help-promo .promo__text {
+    max-width: 625px;
+}
+
+.send-help-promo .send-help-promo__wrapper {
+    background-position: right top;
+}
+
+.page-send-help .page-send-help__wrapper {
+    flex-direction: row-reverse;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .send-help-promo .send-help-promo__img {
+        width: calc(1157 / 19.2 * 1vw);
+        height: calc(670 / 19.2 * 1vw);
+    }
+    
+    .send-help-promo .promo__text {
+        max-width: calc(625 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .send-help-promo .send-help-promo__img {
+        width: 772px;
+        height: 447px;
+    }
+    
+    .send-help-promo .promo__text {
+        max-width: 400px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .send-help-promo .send-help-promo__img {
+        width: calc(772 / 12.8 * 1vw);
+        height: calc(447 / 12.8 * 1vw);
+    }
+    
+    .send-help-promo .promo__text {
+        max-width: calc(400 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .send-help-promo .promo__wrapper {
+        row-gap: 76px;
+        background-image: url("../img/page-send-help/bg-img-mob.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+    }
+
+    .send-help-promo .send-help-promo__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .send-help-promo .promo__text {
+        max-width: 100%;
+    }
+
+    .send-help-promo .promo__text {
+        margin-bottom: 245px;
+    }
+
+    .page-send-help .page-send-help__wrapper {
+        flex-direction: column;
+    }
+
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    .send-help-promo .promo__wrapper {
+        row-gap: calc(76 / 4.3 * 1vw);
+    }
+
+    .send-help-promo .promo__text {
+        margin-bottom: calc(245 / 4.3 * 1vw);
+    }
+}

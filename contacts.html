@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="header header-contacts">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <a href="index.html">
+                        <img class="header__logo" src="./img/logo/logo.svg" alt="logo" width="161" height="40">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">О фонде</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogaem.html">Помогаем</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogli.html">Помогли</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="news.html">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reports.html">Отчеты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <button class="header__login" type="button">
+                            <img src="./img/header/login-icon.svg" alt="login icon" width="24" height="24">
+                        </button>
+                    </nav>
+                    <div class="header__btns">
+                        <a href="send-help.html" class="btn">Отправить поддержку</a>
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    </div>
+                </div>
+                <div class="header__right-mob">
+                    <button class="header__login-btn-mob" type="button">
+                        <img src="./img/header/login-btn-mob.svg" alt="login btn" width="25" height="25">
+                    </button>
+                    <button id="btn-mobile-nav" class="header__burger-btn-mob" type="button">
+                        <img id="mobile-nav-img" src="./img/header/burger-btn-mob.svg" alt="mob menu btn" width="31"
+                            height="17">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container screen-3-only">
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav_list">
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="about.html">О фонде</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogaem.html">Помогаем</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogli.html">Помогли</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="reports.html">Отчеты</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__btns">
+                <a href="send-help.html" class="btn">Отправить поддержку</a>
+                <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+
+        <section class="light-nav">
+            <div class="container">
+                <ul class="light-nav__wrapper">
+                    <li class="light-nav__item"><a class="light-nav__link" href="index.html">Главная</a></li>
+                    <li class="light-nav__item">></li>
+                    <li class="light-nav__item"><a class="light-nav__link light-nav__link-active" href="contacts.html">Контакты</a></li>
+                </ul>   
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__wrapper">
+                    <div class="contacts__left">
+                        <h3 class="contacts__title title-3">Контакты</h3>
+                        <div class="contacts__left-middle">
+                            <a class="contacts__link" href="mailto:info@delo-fund.ru">info@delo-fund.ru</a>
+                            <a class="contacts__link" href="tel:+74950050557">+74950050557</a>
+                            <!-- <div class="contacts__btns">
+                                <button class="btn-with-arrow blue-btn-with-arrow" type="button">Telegram<img class="arrow-img" src="./img/button-icon/blue-btn-arrow.svg" alt="arrow" width="50" height="50"></button>
+                                <button class="btn-with-arrow blue-btn-with-arrow" type="button">Whatsup<img class="arrow-img" src="./img/button-icon/blue-btn-arrow.svg" alt="arrow" width="50" height="50"></button>
+                                <button class="btn-with-arrow blue-btn-with-arrow" type="button">Whatsup<img class="arrow-img" src="./img/button-icon/blue-btn-arrow.svg" alt="arrow" width="50" height="50"></button>
+                            </div> -->
+                        </div>
+                        <iframe class="contacts__map"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Add8e5762209f4bc20d267ffb1ae67b571e59a62d79f2d49a2de11275bee8b1a4&amp;source=constructor"
+                            width="774" height="504" frameborder="0">
+                        </iframe>
+                    </div>
+                    <div class="contacts__right">
+                        <h3 class="contacts__title title-3">Реквизиты</h3>
+                        <div class="contacts__right-middle">
+                            <!-- <div class="contacts__right-btns">
+                                <button class="contacts__right-btn contacts__right-btn--active" type="button">Рубль</button>
+                                <button class="contacts__right-btn" type="button">Доллар</button>
+                                <button class="contacts__right-btn" type="button">Евро</button>
+                            </div> -->
+                            <div class="contacts__right-text">
+                                <p>Благотворительный Фонд “Нам есть дело”</p>
+                                <div id="copy">
+                                    <p><span>ИНН</span> 7708236775</p>
+                                    <p><span>КПП</span> 770901001</p>
+                                    <p><span>ОГРН</span> 1087799008967</p>
+                                    <p><span>р/с</span> 40703810900001412504</p>
+                                    <p>АО «Райффайзенбанк»</p>
+                                    <p><span>корр/сч</span> 30101810200000000700 в ОПЕРУ Московского ГТУ Банка России</p>
+                                    <p>БИК 044525700</p>
+                                </div>
+                                <p>Назначение платежа: Благотворительное пожертвование. НДС не облагается.</p>
+                            </div>
+                        </div>
+                        <div class="contacts__right-bottom">
+                            <button class="copy-btn" type="button"><img src="./img/page-contacts/copy-icon.svg" alt="copy-icon" width="24" height="24">Копировать</button>
+                            <a href="./files/Реквизиты_нам_есть_дело.pdf" download class="download-btn" type="button"><img src="./img/page-contacts/download-icon.svg" alt="download-icon" width="24" height="24">Скачать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__wrapper-img screen-1-only" src="./img/footer/footer-img.svg" alt="bg-img" width="662"
+                    height="473">
+                <img class="footer__wrapper-img screen-2-only" src="./img/footer/footer-img-2.svg" alt="bg-img" width="442"
+                    height="316">
+                <div class="footer__text">
+                    <div class="footer__contacts">
+                        <h2 class="footer__title title-2">Контакты</h2>
+                        <div class="footer__contacts-links">
+                            <a href="mailto:info@delo-fund.ru">info@delo-fund.ru</a>
+                            <a href="tel:+74950050557">+74950050557</a>
+                        </div>
+                        <p class="footer__copyright">© Нам есть дело | Все права защищены</p>
+                    </div>
+                    <div class="footer__btns-mob screen-3-only">
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                        <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                    </div>
+                    <div class="footer__requisites">
+                        <h2 class="footer__title title-2">Реквизиты</h2>
+                        <div class="footer__requisites-content">
+                            <div class="footer__col-left">
+                                <p>Наименование организации | Благотворительный фонд «Нам есть дело»</p>
+                                <p>Адрес места нахождения | 129344, г Москва, ул Верхоянская, 18 / корп 2, эт/ пом/ком
+                                    0/2/4 (Pм141)</p>
+                            </div>
+                            <div class="footer__col-right">
+                                <p>ИНН | 7716933145</p>
+                                <p>КПП | 771601001</p>
+                                <p>р/с | 40703810901100000540</p>
+                                <p>к/с | 30101810200000000593</p>
+                                <p>Банк | АО "АЛЬФА-БАНК"</p>
+                                <p>БИК | 044525593</p>
+                            </div>
+                        </div>
+                        <!-- <p class="footer__copyright">© Нам есть дело | Все права защищены</p> -->
+                    </div>
+                </div>
+                <div class="footer__btns">
+                    <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                </div>
+                <div class="footer__copyright-mob screen-3-only">
+                    <p>© Нам есть дело | Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="./js/mob-nav.js" defer></script>
+    <script src="./js/copy.js" defer></script>
+</body>
+
+</html>

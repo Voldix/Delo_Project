@@ -1,0 +1,96 @@
+.about-promo .about-promo__wrapper {
+    overflow: hidden;
+}
+
+.about-promo .about-promo__img {
+    position: absolute;
+    top: unset;
+    right: 0;
+    bottom: 0;
+    width: 933px;
+    height: 676px;
+}
+
+.about-mission .about-mission__btn {
+    display: none;
+}
+
+.swiper-3 .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-3 .swiper-slide {
+    display: flex;
+    height: auto;
+} 
+
+.card-3__text,
+.card-2__title {
+    flex-grow: 1;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .about-promo .about-promo__img {
+        position: absolute;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        width: calc(933 / 19.2 * 1vw);
+        height: calc(676 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .about-promo .about-promo__img {
+        position: absolute;
+        top: unset;
+        right: 0;
+        bottom: 0;
+        width: 622px;
+        height: 451px;
+    }
+
+    .about-promo .about-promo__text {
+        max-width: 500px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .about-promo .about-promo__img {
+        width: calc(662 / 12.8 * 1vw);
+        height: calc(451 / 12.8 * 1vw);
+    }
+
+    .about-promo .about-promo__text {
+        max-width: calc(500 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .about-promo .about-promo__img {
+        display: none;
+    }
+
+    .about-promo .about-promo__wrapper {
+        background-image: url(../img/page-about/about-promo-img-mob.svg);
+        background-size: contain;
+        background-position: 100% 50%;
+    }
+
+    .about-promo .about-promo__text {
+        max-width: 300px;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    /* calc(50 / 4.3 * 1vw) */
+    /* .about-promo .about-promo__text {
+        max-width: calc(300 / 4.3 * 1vw);
+    } */
+}

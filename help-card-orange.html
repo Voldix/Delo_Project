@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карточка помощи</title>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="header header-reports">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <a href="index.html">
+                        <img class="header__logo" src="./img/logo/logo.svg" alt="logo" width="161" height="40">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">О фонде</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogaem.html">Помогаем</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogli.html">Помогли</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="news.html">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reports.html">Отчеты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <button class="header__login" type="button">
+                            <img src="./img/header/login-icon.svg" alt="login icon" width="24" height="24">
+                        </button>
+                    </nav>
+                    <div class="header__btns">
+                        <a href="send-help.html" class="btn">Отправить поддержку</a>
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    </div>
+                </div>
+                <div class="header__right-mob">
+                    <button class="header__login-btn-mob" type="button">
+                        <img src="./img/header/login-btn-mob.svg" alt="login btn" width="25" height="25">
+                    </button>
+                    <button id="btn-mobile-nav" class="header__burger-btn-mob" type="button">
+                        <img id="mobile-nav-img" src="./img/header/burger-btn-mob.svg" alt="mob menu btn" width="31"
+                            height="17">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container screen-3-only">
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav_list">
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="about.html">О фонде</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogaem.html">Помогаем</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogli.html">Помогли</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="reports.html">Отчеты</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__btns">
+                <a href="send-help.html" class="btn">Отправить поддержку</a>
+                <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="light-nav">
+        <div class="container">
+            <ul class="light-nav__wrapper">
+                <li class="light-nav__item"><a class="light-nav__link" href="index.html">Главная</a></li>
+                <li class="light-nav__item">></li>
+                <li class="light-nav__item"><a class="light-nav__link" href="pomogaem.html">Помогаем</a></li>
+                <li class="light-nav__item">></li>
+                <li class="light-nav__item"><a class="light-nav__link light-nav__link-active"
+                        href="help-card-orange.html">Василиса скрипай</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <section class="help-card-promo">
+            <div class="container">
+                <div class="help-card-promo__wrapper">
+                    <img class="help-card-promo__ribbon-img" src="./img/page-help-card/promo/promo-ribbon.svg"
+                        alt="ribbon img" width="686" height="867">
+                    <div class="help-card-promo__left">
+                        <div class="help-card-promo__left-top">
+                            <p class="help-card-promo__date">До 30 марта</p>
+                            <h2 class="title-2 help-card-promo__title">Василика<br> Скрипай</h2>
+                            <p class="help-card-promo__text">Необходима оплата протонной лучевой терапии Необходима
+                                оплата протонной лучевой терапии
+                                Необходима оплата протонной
+                                лучевой терапии...</p>
+                        </div>
+                        <div class="help-card-promo__left-bottom">
+                            <div class="top-content">
+                                <p class="top-content__title">Общая сумма сбора<br class="br-work"> 1 989 846 ₽</p>
+                                <!-- <p class="top-content__text">Осталось собрать 1 000 000 ₽</p> -->
+                            </div>
+                            <!-- <div class="middle-content">
+                                <div class="middle-content__sum">
+                                    <p>989 846 ₽</p>
+                                    <p>1 989 846 ₽</p>
+                                </div>
+                                <div class="middle-content__line">
+                                    <div class="middle-content__line-left"></div>
+                                    <div class="middle-content__line-right"></div>
+                                </div>
+                                <div class="middle-content__text">
+                                    <p class="middle-content__text-left">Лечение</p>
+                                    <p class="middle-content__text-date">До 30 марта</p>
+                                </div>
+                            </div> -->
+                            <a href="send-help.html" class="btn btn-orange">Помочь</a>
+                        </div>
+                    </div>
+                    <div class="help-card-promo__right">
+                        <img src="./img/page-help-card/promo/promo-img.png"
+                            srcset="./img/page-help-card/promo/promo-img@2x.png 2x" alt="promo img" width="756"
+                            height="683">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-card-story">
+            <img class="help-card-story__bg" src="./img/page-help-card/main/bg-ribbon-orange.svg" alt="bg-img"
+                width="584" height="852">
+            <div class="container">
+                <div class="help-card-story__wrapper">
+                    <div class="help-card-story__left">
+                        <img src="./img/page-help-card/main/img-1.png"
+                            srcset="./img/page-help-card/main/img-1@2x.png 2x" alt="story img" width="995" height="630">
+                    </div>
+                    <div class="help-card-story__right">
+                        <h2 class="title-2">История</h2>
+                        <div class="help-card-story__text">
+                            <p>Привычная жизнь Коли изменилась 2,5 года назад,
+                                когда начались проблемы со зрением. Неожиданно юноша начал видеть окружающий мир
+                                «кусочками».</p>
+                            <p>Офтальмолог рекомендовал незамедлительно пройти МРТ. Обследования выявили опухоль
+                                головного мозга
+                                с метастазами по всему позвоночнику и гидроцефалию.</p>
+                            <p>Офтальмолог рекомендовал незамедлительно пройти МРТ. Обследования выявили опухоль
+                                головного мозга
+                                с метастазами по всему позвоночнику и гидроцефалию.</p>
+                            <p>Офтальмолог рекомендовал незамедлительно пройти МРТ. Обследования выявили опухоль
+                                головного мозга.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="help-card-healing">
+            <div class="container">
+                <div class="help-card-healing__wrapper">
+                    <div class="help-card-healing__left">
+                        <h2 class="title-2">Ход лечения</h2>
+                        <div class="help-card-healing__story">
+                            <div class="help-card-healing__story-wrapper">
+                                <p class="help-card-healing__story-date">09.02.25</p>
+                                <p class="help-card-healing__story-text">Офтальмолог рекомендовал незамедлительно пройти
+                                    МРТ.</p>
+                            </div>
+                            <div class="help-card-healing__story-wrapper">
+                                <p class="help-card-healing__story-date">09.02.25</p>
+                                <p class="help-card-healing__story-text">Офтальмолог рекомендовал незамедлительно
+                                    пройти МРТ. Офтальмолог рекомендовал незамедлительно пройти МРТ. </p>
+                            </div>
+                            <div class="help-card-healing__story-wrapper">
+                                <p class="help-card-healing__story-date">09.02.25</p>
+                                <p class="help-card-healing__story-text">Офтальмолог рекомендовал незамедлительно
+                                    пройти МРТ. Офтальмолог рекомендовал незамедлительно пройти МРТ. </p>
+                            </div>
+                            <div class="help-card-healing__story-wrapper">
+                                <p class="help-card-healing__story-date">09.02.25</p>
+                                <p class="help-card-healing__story-text">Офтальмолог рекомендовал незамедлительно
+                                    пройти МРТ. Офтальмолог рекомендовал незамедлительно пройти МРТ. </p>
+                            </div>
+                            <div class="help-card-healing__story-wrapper">
+                                <p class="help-card-healing__story-date">09.02.25</p>
+                                <p class="help-card-healing__story-text">Офтальмолог рекомендовал незамедлительно
+                                    пройти МРТ. Офтальмолог рекомендовал.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help-card-healing__right">
+                        <img src="./img/page-help-card/main/img-2.png" src="./img/page-help-card/main/img-2@2x.png 2x"
+                            alt="story img" width="970" height="630">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="helping-now">
+            <img class="helping-now__bg screen-1-only" src="./img/helping-now/ribbon-icon-right.svg" alt="bg-ribbon">
+            <img class="helping-now__bg screen-2-only" src="./img/helping-now/ribbon-icon-right-2.svg" alt="bg-ribbon"
+                width="370" height="557">
+            <img class="helping-now__bg screen-3-only" src="./img/helping-now/ribbon-icon-right-3.svg" alt="bg-ribbon"
+                width="389" height="834">
+            <div class="container">
+                <div class="helping-now__wrapper">
+                    <div class="slider-btns">
+                        <button class="swiper-btn-prev"><img src="./img/button-icon/prev-arrow.svg" alt="prev slide" width="37"
+                                height="37"></button>
+                        <button class="swiper-btn-next"><img src="./img/button-icon/next-arrow.svg" alt="next slide" width="37"
+                                height="37"></button>
+                    </div>
+                    <div class="helping-now__header">
+                        <h2 class="title-2">Кому помогаем</h2>
+                        <button class="btn-with-arrow">Посмотреть больше<img src="./img/button-icon/button-arrow.svg"
+                                alt="arrow" width="52" height="52"></button>
+                    </div>
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card__img" src="./img/helping-now/img-1.png"
+                                        srcset="./img/helping-now/img-1@2x.png 2x" alt="small girl" width="365" height="274">
+                                    <button class="btn-collect-money" type="button"><img src="./img/button-icon/btn-collect.svg"
+                                            alt="card" width="21" height="21">Разовый сбор</button>
+                                    <div class="card__text">
+                                        <p class="card__date">До 30 марта</p>
+                                        <p class="card__name">Василика Скрипай</p>
+                                        <p class="card__desc">Необходима оплата протонной лучевой терапии...</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a href="send-help.html" class="btn">Помочь</a>
+                                        <a href="help-card-blue.html" class="card__link">Узнать историю</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card--orange">
+                                    <img class="card__img" src="./img/helping-now/img-2.png"
+                                        srcset="./img/helping-now/img-2@2x.png 2x" alt="small girl" width="365" height="274">
+                                    <button class="btn-collect-money btn-collect-money--orange" type="button"><img
+                                            src="./img/button-icon/btn-collect.svg" alt="card" width="21" height="21">Срочный
+                                        сбор</button>
+                                    <div class="card__text">
+                                        <p class="card__date card__date--orange">До 30 марта</p>
+                                        <p class="card__name">Василика Скрипай</p>
+                                        <p class="card__desc">Необходима оплата протонной лучевой терапии...</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a href="send-help.html" class="btn btn-orange">Помочь</a>
+                                        <a href="help-card-orange.html" class="card__link card__link--orange">Узнать историю</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card__img" src="./img/helping-now/img-3.png"
+                                        srcset="./img/helping-now/img-3@2x.png 2x" alt="old man" width="365" height="274">
+                                    <button class="btn-collect-money" type="button"><img src="./img/button-icon/btn-collect.svg"
+                                            alt="card" width="21" height="21">Разовый сбор</button>
+                                    <div class="card__text">
+                                        <p class="card__date">До 30 марта</p>
+                                        <p class="card__name">Василика Скрипай</p>
+                                        <p class="card__desc">Необходима оплата протонной лучевой терапии...</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a href="send-help.html" class="btn">Помочь</a>
+                                        <a href="help-card-blue.html" class="card__link">Узнать историю</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card__img" src="./img/helping-now/img-4.png"
+                                        srcset="./img/helping-now/img-4@2x.png 2x" alt="small boy" width="365" height="274">
+                                    <button class="btn-collect-money" type="button"><img src="./img/button-icon/btn-collect.svg"
+                                            alt="card" width="21" height="21">Разовый сбор</button>
+                                    <div class="card__text">
+                                        <p class="card__date">До 30 марта</p>
+                                        <p class="card__name">Василика Скрипай</p>
+                                        <p class="card__desc">Необходима оплата протонной лучевой терапии...</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a href="send-help.html" class="btn">Помочь</a>
+                                        <a href="help-card-blue.html" class="card__link">Узнать историю</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card__img" src="./img/helping-now/img-5.png"
+                                        srcset="./img/helping-now/img-5@2x.png 2x" alt="small girls" width="365" height="274">
+                                    <button class="btn-collect-money" type="button"><img src="./img/button-icon/btn-collect.svg"
+                                            alt="card" width="21" height="21">Разовый сбор</button>
+                                    <div class="card__text">
+                                        <p class="card__date">До 30 марта</p>
+                                        <p class="card__name">Василика Скрипай</p>
+                                        <p class="card__desc">Необходима оплата протонной лучевой терапии...</p>
+                                    </div>
+                                    <div class="card__bottom">
+                                        <a href="send-help.html" class="btn">Помочь</a>
+                                        <a href="help-card-blue.html" class="card__link">Узнать историю</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=".btn-with-arrow-mob screen-3-only">
+                        <button class="btn-with-arrow">Посмотреть больше<img src="./img/button-icon/button-arrow.svg"
+                                alt="arrow"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__wrapper-img screen-1-only" src="./img/footer/footer-img.svg" alt="bg-img"
+                    width="662" height="473">
+                <img class="footer__wrapper-img screen-2-only" src="./img/footer/footer-img-2.svg" alt="bg-img"
+                    width="442" height="316">
+                <div class="footer__text">
+                    <div class="footer__contacts">
+                        <h2 class="footer__title title-2">Контакты</h2>
+                        <div class="footer__contacts-links">
+                            <a href="mailto:info@delo-fund.ru">info@delo-fund.ru</a>
+                            <a href="tel:+74950050557">+74950050557</a>
+                        </div>
+                        <p class="footer__copyright">© Нам есть дело | Все права защищены</p>
+                    </div>
+                    <div class="footer__btns-mob screen-3-only">
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                        <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                    </div>
+                    <div class="footer__requisites">
+                        <h2 class="footer__title title-2">Реквизиты</h2>
+                        <div class="footer__requisites-content">
+                            <div class="footer__col-left">
+                                <p>Наименование организации | Благотворительный фонд «Нам есть дело»</p>
+                                <p>Адрес места нахождения | 129344, г Москва, ул Верхоянская, 18 / корп 2, эт/ пом/ком
+                                    0/2/4 (Pм141)</p>
+                            </div>
+                            <div class="footer__col-right">
+                                <p>ИНН | 7716933145</p>
+                                <p>КПП | 771601001</p>
+                                <p>р/с | 40703810901100000540</p>
+                                <p>к/с | 30101810200000000593</p>
+                                <p>Банк | АО "АЛЬФА-БАНК"</p>
+                                <p>БИК | 044525593</p>
+                            </div>
+                        </div>
+                        <!-- <p class="footer__copyright">© Нам есть дело | Все права защищены</p> -->
+                    </div>
+                </div>
+                <div class="footer__btns">
+                    <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                </div>
+                <div class="footer__copyright-mob screen-3-only">
+                    <p>© Нам есть дело | Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="./js/swiper.js" defer></script>
+    <script src="./js/slider-circle.js" defer></script>
+    <script src="./js/mob-nav.js" defer></script>
+</body>
+
+</html>

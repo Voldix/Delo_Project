@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+    <header class="header header-reports">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__left">
+                    <a href="index.html">
+                        <img class="header__logo" src="./img/logo/logo.svg" alt="logo" width="161" height="40">
+                    </a>
+                </div>
+                <div class="header__right">
+                    <nav class="header__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="about.html">О фонде</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogaem.html">Помогаем</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="pomogli.html">Помогли</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="news.html">Новости</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="reports.html">Отчеты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                        <button class="header__login" type="button">
+                            <img src="./img/header/login-icon.svg" alt="login icon" width="24" height="24">
+                        </button>
+                    </nav>
+                    <div class="header__btns">
+                        <a href="send-help.html" class="btn">Отправить поддержку</a>
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    </div>
+                </div>
+                <div class="header__right-mob">
+                    <button class="header__login-btn-mob" type="button">
+                        <img src="./img/header/login-btn-mob.svg" alt="login btn" width="25" height="25">
+                    </button>
+                    <button id="btn-mobile-nav" class="header__burger-btn-mob" type="button">
+                        <img id="mobile-nav-img" src="./img/header/burger-btn-mob.svg" alt="mob menu btn" width="31"
+                            height="17">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container screen-3-only">
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav_list">
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="about.html">О фонде</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogaem.html">Помогаем</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="pomogli.html">Помогли</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="news.html">Новости</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="reports.html">Отчеты</a>
+                </li>
+                <li class="mobile-nav_item">
+                    <a class="mobile-nav__link" href="contacts.html">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobile-nav__btns">
+                <a href="send-help.html" class="btn">Отправить поддержку</a>
+                <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="light-nav">
+        <div class="container">
+            <ul class="light-nav__wrapper">
+                <li class="light-nav__item"><a class="light-nav__link" href="index.html">Главная</a></li>
+                <li class="light-nav__item">></li>
+                <li class="light-nav__item"><a class="light-nav__link light-nav__link-active"
+                        href="news.html">Новости</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <main class="main">
+
+        <section class="news-promo">
+            <div class="container">
+                <div class="news-promo__wrapper">
+                    <div class="news-promo__left">
+                        <p class="news-promo__date">25.05.2024</p>
+                        <h2 class="news-promo__title title-2">Конференция для реабилитологов</h2>
+                        <p class="news-promo__text">Необходима оплата протонной лучевой терапии Необходима оплата
+                            протонной лучевой терапииНеобходима оплата протонной лучевой терапии</p>
+                        <a href="event.html" class="btn-with-arrow news-promo__btn">Прочитать историю<img
+                                src="./img/button-icon/button-arrow.svg" alt="arrow" width="52" height="52"></a>
+                    </div>
+                    <div class="news-promo__right">
+                        <img src="./img/page-news/news-promo-img.png" srcset="./img/page-news/news-promo-img@2x.png 2x"
+                            alt="news-promo-img" width="733" height="683">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section-1">
+            <div class="container">
+                <class class="news-section-1__wrapper">
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-1.png"
+                                srcset="./img/page-news/news-section-1/news-img-1@2x.png 2x" alt="news img" width="581" height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-2.png"
+                                srcset="./img/page-news/news-section-1/news-img-2@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-3.png"
+                                srcset="./img/page-news/news-section-1/news-img-3@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-4.png"
+                                srcset="./img/page-news/news-section-1/news-img-4@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-1.png"
+                                srcset="./img/page-news/news-section-1/news-img-1@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-2.png"
+                                srcset="./img/page-news/news-section-1/news-img-2@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="getting-help">
+            <div class="container">
+                <div class="getting-help__wrapper">
+                    <img class="getting-help__img screen-1-only" src="./img/getting-help/getting-help-img.svg"
+                        alt="hands" width="402" height="394">
+                    <img class="getting-help__img screen-2-only" src="./img/getting-help/getting-help-img-2.svg"
+                        alt="hands" width="268" height="263">
+                    <img class="getting-help__img screen-3-only" src="./img/getting-help/getting-help-img-2.svg"
+                        alt="hands" width="354" height="315">
+                    <div class="getting-help__text">
+                        <h2 class="title-2__another">Хочу обратиться к вам</h2>
+                        <p class="getting-help__desc">Если вы нуждаетесь в помощи или хотите, чтобы мы связались с вами,
+                            заполните данную форму.</p>
+                    </div>
+                    <form class="getting-help__form">
+                        <div class="inputs-wrapper">
+                            <input class="getting-help__input" type="text" name="name" placeholder="Ваше имя" required>
+                            <input class="getting-help__input" type="tel" name="telephone" placeholder="Ваш телефон"
+                                required>
+                            <input class="getting-help__input" type="email" name="email" placeholder="Ваш e-mail"
+                                required>
+                        </div>
+                        <div class="form-bottom">
+                            <button class="btn-with-arrow form-btn" type="submit">Обратиться<img
+                                    src="./img/button-icon/button-arrow.svg" alt="arrow" width="49"
+                                    height="49"></button>
+                            <p>*нажимая кнопку вы принимаете принимаете условия обработки <a href="#!">персональных
+                                    данных</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-section-1">
+            <div class="container">
+                <div class="news-section-1__wrapper">
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-1.png"
+                                srcset="./img/page-news/news-section-1/news-img-1@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-2.png"
+                                srcset="./img/page-news/news-section-1/news-img-2@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-3.png"
+                                srcset="./img/page-news/news-section-1/news-img-3@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-4.png"
+                                srcset="./img/page-news/news-section-1/news-img-4@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-1.png"
+                                srcset="./img/page-news/news-section-1/news-img-1@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Забег в поддержку для раковых больных</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="event.html" class="card-link">
+                        <div class="news-section-1__card">
+                            <img src="./img/page-news/news-section-1/news-img-2.png"
+                                srcset="./img/page-news/news-section-1/news-img-2@2x.png 2x" alt="news img" width="581"
+                                height="470">
+                            <div class="news-section-1__card-text">
+                                <h3 class="news-section-1__card-title">Посади дерево</h3>
+                                <a class="news-section-1__card-link" href="event.html">23.12.24</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-pagination">
+            <div class="container">
+                <div class="news-pagination__wrapper">
+                    <button class="btn-with-arrow">Показать больше<img src="./img/button-icon/button-arrow.svg"
+                            alt="arrow" width="52" height="52"></button>
+                    <div class="news-pagination__right">
+                        <button class="news-pagination__btn-prev"><img src="./img/button-icon/button-arrow.svg"
+                                alt="arrow" width="52" height="52"></button>
+                        <div class="news-pagination__pages">
+                            <span>1</span>
+                            <span>2</span>
+                            <span class="news-pagination__circle"></span>
+                            <span class="news-pagination__circle"></span>
+                            <span class="news-pagination__circle"></span>
+                            <span>11</span>
+                            <span>12</span>
+                        </div>
+                        <button class="news-pagination__btn-next"><img src="./img/button-icon/button-arrow.svg"
+                                alt="arrow" width="52" height="52"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <img class="footer__wrapper-img screen-1-only" src="./img/footer/footer-img.svg" alt="bg-img"
+                    width="662" height="473">
+                <img class="footer__wrapper-img screen-2-only" src="./img/footer/footer-img-2.svg" alt="bg-img"
+                    width="442" height="316">
+                <div class="footer__text">
+                    <div class="footer__contacts">
+                        <h2 class="footer__title title-2">Контакты</h2>
+                        <div class="footer__contacts-links">
+                            <a href="mailto:info@delo-fund.ru">info@delo-fund.ru</a>
+                            <a href="tel:+74950050557">+74950050557</a>
+                        </div>
+                        <p class="footer__copyright">© Нам есть дело | Все права защищены</p>
+                    </div>
+                    <div class="footer__btns-mob screen-3-only">
+                        <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                        <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                    </div>
+                    <div class="footer__requisites">
+                        <h2 class="footer__title title-2">Реквизиты</h2>
+                        <div class="footer__requisites-content">
+                            <div class="footer__col-left">
+                                <p>Наименование организации | Благотворительный фонд «Нам есть дело»</p>
+                                <p>Адрес места нахождения | 129344, г Москва, ул Верхоянская, 18 / корп 2, эт/ пом/ком
+                                    0/2/4 (Pм141)</p>
+                            </div>
+                            <div class="footer__col-right">
+                                <p>ИНН | 7716933145</p>
+                                <p>КПП | 771601001</p>
+                                <p>р/с | 40703810901100000540</p>
+                                <p>к/с | 30101810200000000593</p>
+                                <p>Банк | АО "АЛЬФА-БАНК"</p>
+                                <p>БИК | 044525593</p>
+                            </div>
+                        </div>
+                        <!-- <p class="footer__copyright">© Нам есть дело | Все права защищены</p> -->
+                    </div>
+                </div>
+                <div class="footer__btns">
+                    <a href="get-help.html" class="btn btn-orange">Получить помощь</a>
+                    <a href="send-help.html" class="btn btn-white">Отправить поддержку</a>
+                </div>
+                <div class="footer__copyright-mob screen-3-only">
+                    <p>© Нам есть дело | Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/mob-nav.js"></script>
+</body>
+
+</html>

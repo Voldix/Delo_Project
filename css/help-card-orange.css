@@ -1,0 +1,900 @@
+/* Карточка помощи промо */
+.help-card-promo__wrapper {
+    position: relative;
+    padding: 90px;
+    border-radius: 64px;
+    background-color: #de511b;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-card-promo__ribbon-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 686px;
+    height: 867px;
+}
+
+.help-card-promo__left {
+    width: 812px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.help-card-promo__left-top {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.help-card-promo__date {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.help-card-promo .help-card-promo__title {
+    color: #fff;
+}
+
+.help-card-promo__text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.help-card-promo__left-bottom {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 24px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.top-content__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.top-content__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.middle-content__sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.middle-content__line {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.middle-content__line-left {
+    width: 613px;
+    height: 12px;
+    background-color: #de511b;
+}
+
+.middle-content__line-right {
+    width: 167px;
+    height: 12px;
+    background-color: rgba(222, 81, 27, 0.5);
+}
+
+.middle-content__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.middle-content__text-left {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.middle-content__text-date {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(222, 81, 27, 0.5);
+}
+
+.help-card-promo__right img {
+    border-radius: 64px;
+    width: 756px;
+    height: 683px;
+}
+
+/* Карточка помощи История */
+.help-card-story {
+    position: relative;
+}
+
+.help-card-story__bg {
+    position: absolute;
+    right: 0;
+    top: 43%;
+    z-index: -1000;
+    width: 584px;
+    height: 852px;
+}
+
+.help-card-story__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-card-story__left img {
+    width: 995px;
+    height: 630px;
+    border-radius: 32px;
+}
+
+.help-card-story__right {
+    width: 721px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.help-card-story__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+/* Карточка помощи Ход лечения */
+.help-card-healing__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-card-healing__left {
+    width: 746px;
+    display: flex;
+    row-gap: 48px;
+    flex-direction: column;
+}
+
+.help-card-healing__story {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.help-card-healing__story-wrapper {
+    display: flex;
+    column-gap: 38px;
+}
+
+.help-card-healing__story-date {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #333;
+}
+
+.help-card-healing__story-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: #333;
+}
+
+.help-card-healing__right img {
+    border-radius: 32px;
+    width: 970px;
+    height: 630px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    /* Карточка помощи промо */
+    .help-card-promo__wrapper {
+        padding: calc(90 / 19.2 * 1vw);
+        border-radius: calc(64 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__ribbon-img {
+        width: calc(686 / 19.2 * 1vw);
+        height: calc(867 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__left {
+        width: calc(812 / 19.2 * 1vw);
+        row-gap: calc(80 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__left-top {
+        row-gap: calc(8 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__date {
+        font-size: calc(16 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__text {
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__left-bottom {
+        padding: calc(16 / 19.2 * 1vw);
+        border-radius: calc(24 / 19.2 * 1vw);
+        row-gap: calc(24 / 19.2 * 1vw);
+    }
+
+    .top-content {
+        row-gap: calc(8 / 19.2 * 1vw);
+    }
+
+    .top-content__title {
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .top-content__text {
+        font-size: calc(16 / 19.2 * 1vw);
+    }
+
+    .middle-content__sum {
+        font-size: calc(16 / 19.2 * 1vw);
+    }
+
+    .middle-content__line {
+        border-radius: calc(30 / 19.2 * 1vw);
+    }
+
+    .middle-content__line-left {
+        width: calc(613 / 19.2 * 1vw);
+        height: calc(12 / 19.2 * 1vw);
+    }
+
+    .middle-content__line-right {
+        width: calc(167 / 19.2 * 1vw);
+        height: calc(12 / 19.2 * 1vw);
+    }
+
+    .middle-content__text-left {
+        font-size: calc(16 / 19.2 * 1vw);
+    }
+
+    .middle-content__text-date {
+        font-size: calc(16 / 19.2 * 1vw);
+    }
+
+    .help-card-promo__right img {
+        border-radius: calc(64 / 19.2 * 1vw);
+        width: calc(756 / 19.2 * 1vw);
+        height: calc(683 / 19.2 * 1vw);
+    }
+
+    /* Карточка помощи История */
+    .help-card-story__bg {
+        width: calc(584 / 19.2 * 1vw);
+        height: calc(852 / 19.2 * 1vw);
+    }
+
+    .help-card-story__left img {
+        width: calc(995 / 19.2 * 1vw);
+        height: calc(630 / 19.2 * 1vw);
+        border-radius: calc(32 / 19.2 * 1vw);
+    }
+
+    .help-card-story__right {
+        width: calc(721 / 19.2 * 1vw);
+        row-gap: calc(48 / 19.2 * 1vw);
+    }
+
+    .help-card-story__text {
+        row-gap: calc(38 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    /* Карточка помощи Ход лечения */
+    .help-card-healing__left {
+        width: calc(746 / 19.2 * 1vw);
+        row-gap: calc(48 / 19.2 * 1vw);
+    }
+
+    .help-card-healing__story {
+        row-gap: calc(38 / 19.2 * 1vw);
+    }
+
+    .help-card-healing__story-wrapper {
+        column-gap: calc(38 / 19.2 * 1vw);
+    }
+
+    .help-card-healing__story-date {
+        font-size: calc(28 / 19.2 * 1vw);
+    }
+
+    .help-card-healing__story-text {
+        font-size: calc(18 / 19.2 * 1vw);
+    }
+
+    .help-card-healing__right img {
+        border-radius: calc(32 / 19.2 * 1vw);
+        width: calc(970 / 19.2 * 1vw);
+        height: calc(630 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    /* Карточка помощи промо */
+    .help-card-promo__wrapper {
+        padding: 60px;
+        border-radius: 43px;
+    }
+
+    .help-card-promo__ribbon-img {
+        width: 457px;
+        height: 579px;
+    }
+
+    .help-card-promo__left {
+        width: 541px;
+        row-gap: 54px;
+    }
+
+    .help-card-promo__left-top {
+        row-gap: 5px;
+    }
+
+    .help-card-promo__date {
+        font-size: 10px;
+    }
+
+    .help-card-promo__text {
+        font-size: 16px;
+    }
+
+    .help-card-promo__left-bottom {
+        padding: 10px;
+        border-radius: 16px;
+        row-gap: 16px;
+    }
+
+    .top-content {
+        row-gap: 5px;
+    }
+
+    .top-content__title {
+        font-size: 16px;
+    }
+
+    .top-content__text {
+        font-size: 10px;
+    }
+
+    .middle-content__sum {
+        font-size: 10px;
+    }
+
+    .middle-content__line {
+        border-radius: 20px;
+    }
+
+    .middle-content__line-left {
+        width: 408px;
+        height: 8px;
+    }
+
+    .middle-content__line-right {
+        width: 111px;
+        height: 8px;
+    }
+
+    .middle-content__text-left {
+        font-size: 10px;
+    }
+
+    .middle-content__text-date {
+        font-size: 10px;
+    }
+
+    .help-card-promo__right img {
+        border-radius: 43px;
+        width: 504px;
+        height: 455px;
+    }
+
+    /* Карточка помощи История */
+    .help-card-story__bg {
+        position: absolute;
+        right: 0;
+        top: 43%;
+        z-index: -1000;
+        width: 390px;
+        height: 568px;
+    }
+
+    .help-card-story__left img {
+        border-radius: 21px;
+        width: 663px;
+        height: 420px;
+    }
+
+    .help-card-story__right {
+        width: 481px;
+        row-gap: 32px;
+    }
+
+    .help-card-story__text {
+        row-gap: 25px;
+        font-size: 16px;
+    }
+
+    /* Карточка помощи Ход лечения */
+    .help-card-healing__left {
+        width: 497px;
+        row-gap: 32px;
+    }
+
+    .help-card-healing__story {
+        row-gap: 25px;
+    }
+
+    .help-card-healing__story-wrapper {
+        column-gap: 25px;
+    }
+
+    .help-card-healing__story-date {
+        font-size: 18px;
+    }
+
+    .help-card-healing__story-text {
+        font-size: 12px;
+    }
+
+    .help-card-healing__right img {
+        border-radius: 21px;
+        width: 646px;
+        height: 420px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    /* Карточка помощи промо */
+    .help-card-promo__wrapper {
+        padding: calc(60 / 12.8 * 1vw);
+        border-radius: calc(43 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__ribbon-img {
+        width: calc(457 / 12.8 * 1vw);
+        height: calc(579 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__left {
+        width: calc(541 / 12.8 * 1vw);
+        row-gap: calc(54 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__left-top {
+        row-gap: calc(5 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__date {
+        font-size: calc(10 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__text {
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__left-bottom {
+        padding: calc(10 / 12.8 * 1vw);
+        border-radius: calc(16 / 12.8 * 1vw);
+        row-gap: calc(16 / 12.8 * 1vw);
+    }
+
+    .top-content {
+        row-gap: calc(5 / 12.8 * 1vw);
+    }
+
+    .top-content__title {
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .top-content__text {
+        font-size: calc(10 / 12.8 * 1vw);
+    }
+
+    .middle-content__sum {
+        font-size: calc(10 / 12.8 * 1vw);
+    }
+
+    .middle-content__line {
+        border-radius: calc(20 / 12.8 * 1vw);
+    }
+
+    .middle-content__line-left {
+        width: calc(408 / 12.8 * 1vw);
+        height: calc(8 / 12.8 * 1vw);
+    }
+
+    .middle-content__line-right {
+        width: calc(111 / 12.8 * 1vw);
+        height: calc(8 / 12.8 * 1vw);
+    }
+
+    .middle-content__text-left {
+        font-size: calc(10 / 12.8 * 1vw);
+    }
+
+    .middle-content__text-date {
+        font-size: calc(10 / 12.8 * 1vw);
+    }
+
+    .help-card-promo__right img {
+        border-radius: calc(43 / 12.8 * 1vw);
+        width: calc(504 / 12.8 * 1vw);
+        height: calc(455 / 12.8 * 1vw);
+    }
+
+    /* Карточка помощи История */
+    .help-card-story__bg {
+        width: calc(390 / 12.8 * 1vw);
+        height: calc(568 / 12.8 * 1vw);
+    }
+
+    .help-card-story__left img {
+        border-radius: calc(21 / 12.8 * 1vw);
+        width: calc(663 / 12.8 * 1vw);
+        height: calc(420 / 12.8 * 1vw);
+    }
+
+    .help-card-story__right {
+        width: calc(481 / 12.8 * 1vw);
+        row-gap: calc(32 / 12.8 * 1vw);
+    }
+
+    .help-card-story__text {
+        row-gap: calc(25 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    /* Карточка помощи Ход лечения */
+    .help-card-healing__left {
+        width: calc(497 / 12.8 * 1vw);
+        row-gap: calc(32 / 12.8 * 1vw);
+    }
+
+    .help-card-healing__story {
+        row-gap: calc(25 / 12.8 * 1vw);
+    }
+
+    .help-card-healing__story-wrapper {
+        column-gap: calc(25 / 12.8 * 1vw);
+    }
+
+    .help-card-healing__story-date {
+        font-size: calc(18 / 12.8 * 1vw);
+    }
+
+    .help-card-healing__story-text {
+        font-size: calc(12 / 12.8 * 1vw);
+    }
+
+    .help-card-healing__right img {
+        border-radius: calc(21 / 12.8 * 1vw);
+        width: calc(646 / 12.8 * 1vw);
+        height: calc(420 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    /* Карточка помощи промо */
+    .help-card-promo__wrapper {
+        padding: 25px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .help-card-promo__right img {
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+    }
+
+    .help-card-promo__ribbon-img {
+        display: none;
+    }
+
+    .help-card-promo__left {
+        width: 100%;
+        row-gap: 40px;
+    }
+
+    .help-card-promo__left-top {
+        row-gap: 15px;
+    }
+
+    .help-card-promo__date {
+        font-size: 16px;
+    }
+
+    .help-card-promo__text {
+        font-size: 16px;
+    }
+
+    .help-card-promo__left-bottom {
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 24px;
+        row-gap: 24px;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+    }
+
+    .br-work {
+        display: block;
+    }
+
+    .top-content__title {
+        font-size: 24px;
+    }
+
+    .top-content__text {
+        font-size: 16px;
+    }
+
+    .middle-content__sum {
+        font-size: 16px;
+    }
+
+    .middle-content__line {
+        border-radius: 30px;
+    }
+
+    .middle-content__line-left {
+        width: 55%;
+        height: 13px;
+    }
+
+    .middle-content__line-right {
+        width: 45%;
+        height: 13px;
+    }
+
+    .middle-content__text-left {
+        font-size: 16px;
+    }
+
+    .middle-content__text-date {
+        font-size: 16px;
+    }
+
+    /* Карточка помощи История */
+    .help-card-story__bg {
+        display: none;
+    }
+
+    .help-card-story__wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .help-card-story__left img {
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+    }
+
+    .help-card-story__right {
+        width: 100%;
+        row-gap: 40px;
+    }
+
+    .help-card-story__text {
+        row-gap: 20px;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    /* Карточка помощи Ход лечения */
+    .help-card-healing__wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+
+    .help-card-healing__left {
+        width: 100%;
+        row-gap: 40px;
+    }
+
+    .help-card-healing__story {
+        row-gap: 20px;
+    }
+
+    .help-card-healing__story-wrapper {
+        column-gap: 38px;
+    }
+
+    .help-card-healing__story-date {
+        font-size: 18px;
+        line-height: 1.56;
+    }
+
+    .help-card-healing__story-text {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .help-card-healing__right img {
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    /* Карточка помощи промо */
+    .help-card-promo__wrapper {
+        padding: calc(25 / 4.3 * 1vw);
+        border-radius: calc(25 / 4.3 * 1vw);
+        row-gap: calc(20 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__right img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__left {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__left-top {
+        row-gap: calc(15 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__date {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__text {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .help-card-promo__left-bottom {
+        padding: calc(16 / 4.3 * 1vw);
+        border-radius: calc(24 / 4.3 * 1vw);
+        row-gap: calc(24 / 4.3 * 1vw);
+    }
+
+    .top-content {
+        row-gap: calc(8 / 4.3 * 1vw);
+    }
+
+    .top-content__title {
+        font-size: calc(24 / 4.3 * 1vw);
+    }
+
+    .top-content__text {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .middle-content__sum {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .middle-content__line {
+        border-radius: calc(30 / 4.3 * 1vw);
+    }
+
+    .middle-content__line-left {
+        width: 55%;
+        height: calc(13 / 4.3 * 1vw);
+    }
+
+    .middle-content__line-right {
+        width: 45%;
+        height: calc(13 / 4.3 * 1vw);
+    }
+
+    .middle-content__text-left {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .middle-content__text-date {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    /* Карточка помощи История */
+    .help-card-story__bg {
+        display: none;
+    }
+
+    .help-card-story__wrapper {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .help-card-story__left img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    .help-card-story__right {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .help-card-story__text {
+        row-gap: calc(20 / 4.3 * 1vw);
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    /* Карточка помощи Ход лечения */
+    .help-card-healing__wrapper {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__left {
+        width: 100%;
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__story {
+        row-gap: calc(20 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__story-wrapper {
+        column-gap: calc(38 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__story-date {
+        font-size: calc(18 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__story-text {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .help-card-healing__right img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+}

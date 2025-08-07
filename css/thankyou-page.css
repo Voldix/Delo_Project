@@ -1,0 +1,70 @@
+.thankyou-page {
+    display: flex;
+}
+
+.thankyou-page__wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 16px;
+
+    padding-top: 100px;
+    padding-bottom: 260px;
+    background-image: url("../img/thank-you-message/thank-you-img.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 413px 184px;
+}
+
+.thank-you-page__img {
+    width: 100px;
+    height: 100px;
+}
+
+.thank-you-page__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.4;
+    color: #313238;
+    text-align: center;
+}
+
+.thank-you-page__text {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #313238;
+    text-align: center;
+}
+
+.thankyou-page__footer {
+    margin-top: 0 !important;
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .thank-you-page__img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .thank-you-page__title {
+        font-size: 28px;
+    }
+    
+    .thank-you-page__text {
+        font-size: 20px;
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .thank-you-page__title {
+        font-size: 24px;
+    }
+    
+    .thank-you-page__text {
+        font-size: 18px;
+    }
+}

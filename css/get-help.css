@@ -1,0 +1,1219 @@
+.page-get-help__input:focus::placeholder,
+.page-get-help__textarea:focus::placeholder {
+    opacity: 0;
+}
+
+input:focus::-webkit-input-placeholder,
+input:focus::-moz-placeholder,
+input:focus:-moz-placeholder,
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+/* Получить помощь промо */
+.page-get-help__wrapper {
+    padding: 90px 90px 125px;
+    border-radius: 64px;
+    background-color: #e5edff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-get-help__left {
+    max-width: 812px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.page-get-help__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+
+    font-size: 24px;
+    line-height: 1.33;
+    color: #121212;
+}
+
+.page-get-help__form {
+    padding: 50px;
+    background-color: #fff;
+    width: 678px;
+    height: 655.8px;
+    border-radius: 32px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+}
+
+.page-get-help__form input,
+.page-get-help__form textarea,
+.page-get-help__form .page-get-help__input,
+.page-get-help__form .page-get-help__textarea {
+    font-weight: 400;
+    font-size: 18px;
+    color: #717171;
+}
+
+.page-get-help__input,
+.page-get-help__textarea {
+    padding: 19px 16px;
+    border-radius: 20px;
+    background-color: #e5edff;
+}
+
+.page-get-help__textarea {
+    height: 163px;
+    resize: none;
+    outline: none;
+}
+
+.page-get-help__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+    font-size: 18px;
+    color: #333;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.page-get-help__form .page-get-help__form-btn {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 256px;
+    height: 60px;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    border-radius: 6px;
+    border: 1px solid #7599e2;
+    width: 24px;
+    height: 24px;
+    vertical-align: sub;
+}
+
+.custom-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("../img/page-get-help/checkbox-tick.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2 ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.real-checkbox:focus + .custom-checkbox {
+    box-shadow: 0 0 0 1px #7599e2, 0 0 10px #e5edff;
+}
+
+/* Сообщение об оправке */
+.thank-you-message {
+    background-color: #fff;
+    width: 678px;
+    height: 655.8px;
+    border-radius: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../img/thank-you-message/thank-you-img.svg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 413px 184px;
+}
+
+.thank-you-message__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 16px;
+    width: 344px;
+}
+
+.thank-you-message__img {
+    width: 80px;
+    height: 80px;
+}
+
+.thank-you-message__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #313238;
+}
+
+.thank-you-message__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #313238;
+}
+
+/* Получить помощь инфо */
+.get-help-middle__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+
+.get-help-middle__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get-help-middle__left img {
+    width: 985px;
+    height: 640px;
+    border-radius: 32px;
+}
+
+.get-help-middle__right {
+    max-width: 721px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.get-help-middle__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 27px;
+}
+
+.get-help-middle__cards .get-help-middle__option {
+    font-size: 26px;
+    border-radius: 21px;
+    padding: 20px;
+    width: 347px;
+    height: 123px;
+}
+
+.get-help-middle__cards .get-help-middle__option .option-btn-1 {
+    width: 88px;
+    height: 111px;
+}
+
+.get-help-middle__cards .get-help-middle__option .option-btn-2 {
+    width: 53px;
+    height: 103px;
+}
+
+.get-help-middle__cards .get-help-middle__option .option-btn-3 {
+    width: 117px;
+    height: 105px;
+}
+
+.get-help-middle__cards .get-help-middle__option .option-btn-4 {
+    width: 65px;
+    height: 103px;
+}
+
+.get-help-middle__text {
+    width: 100%;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+
+    border: 2px solid #e5edff;
+    border-radius: 24px;
+    padding: 26.5px 60.5px;
+    background-color: #7599e2;
+}
+
+/* Вопросы */
+.get-help-questions__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.accordeon-topic {
+    cursor: pointer;
+}
+
+.get-help-questions__questions-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.get-help-questions__ask {
+    padding: 24px 24px 24px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #7599e2;
+    border-radius: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 0.9;
+}
+
+.get-help-questions__ask img {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;;
+}
+
+.get-help-questions__ask-content {
+    padding: 0 48px;
+    font-size: 20px;
+
+    max-height: 0;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+}
+
+.get-help-questions__ask-content > *:first-child {
+    padding-top: 16px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    /* Получить помощь промо */
+    .page-get-help__wrapper {
+        padding: calc(90 / 19.2 * 1vw) calc(90 / 19.2 * 1vw)
+            calc(125 / 19.2 * 1vw);
+        border-radius: calc(64 / 19.2 * 1vw);
+    }
+
+    .page-get-help__left {
+        max-width: calc(812 / 19.2 * 1vw);
+        row-gap: calc(80 / 19.2 * 1vw);
+    }
+
+    .page-get-help .title-1 {
+        font-size: calc(130 / 19.2 * 1vw);
+    }
+
+    .page-get-help__text {
+        row-gap: calc(40 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .page-get-help__form {
+        padding: calc(50 / 19.2 * 1vw);
+        width: calc(678 / 19.2 * 1vw);
+        height: calc(655.8 / 19.2 * 1vw);
+        border-radius: calc(32 / 19.2 * 1vw);
+        row-gap: calc(130 / 19.2 * 1vw) 47;
+    }
+
+    .page-get-help__form input,
+    .page-get-help__form textarea,
+    .page-get-help__form .page-get-help__input,
+    .page-get-help__form .page-get-help__textarea {
+        font-size: calc(18 / 19.2 * 1vw);
+    }
+
+    .page-get-help__input,
+    .page-get-help__textarea {
+        padding: calc(19 / 19.2 * 1vw) calc(16 / 19.2 * 1vw);
+        border-radius: calc(20 / 19.2 * 1vw);
+    }
+
+    .page-get-help__textarea {
+        height: calc(163 / 19.2 * 1vw);
+    }
+
+    .page-get-help__checkbox {
+        column-gap: calc(20 / 19.2 * 1vw);
+        font-size: calc(18 / 19.2 * 1vw);
+    }
+
+    .page-get-help__form .page-get-help__form-btn {
+        font-size: calc(18 / 19.2 * 1vw);
+        width: calc(256 / 19.2 * 1vw);
+        height: calc(60 / 19.2 * 1vw);
+    }
+
+    .custom-checkbox {
+        border-radius: calc(6 / 19.2 * 1vw);
+        width: calc(24 / 19.2 * 1vw);
+        height: calc(24 / 19.2 * 1vw);
+    }
+
+    .custom-checkbox::before {
+        width: calc(18 / 19.2 * 1vw);
+        height: calc(18 / 19.2 * 1vw);
+    }
+
+    .real-checkbox:focus + .custom-checkbox {
+        box-shadow: 0 0 0 calc(1 / 19.2 * 1vw) #7599e2,
+            0 0 calc(10 / 19.2 * 1vw) #e5edff;
+    }
+
+    /* Сообщение об оправке */
+    .thank-you-message {
+        width: calc(678 / 19.2 * 1vw);
+        height: calc(655.8 / 19.2 * 1vw);
+        border-radius: calc(32 / 19.2 * 1vw);
+        background-size: calc(413 / 19.2 * 1vw) calc(184 / 19.2 * 1vw);
+    }
+
+    .thank-you-message__block {
+        row-gap: calc(16 / 19.2 * 1vw);
+        width: calc(344 / 19.2 * 1vw);
+    }
+
+    .thank-you-message__img {
+        width: calc(80 / 19.2 * 1vw);
+        height: calc(80 / 19.2 * 1vw);
+    }
+
+    .thank-you-message__title {
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .thank-you-message__text {
+        font-size: calc(18 / 19.2 * 1vw);
+    }
+
+    /* Получить помощь инфо */
+    .get-help-middle__wrapper {
+        row-gap: calc(40 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__left img {
+        width: calc(985 / 19.2 * 1vw);
+        height: calc(640 / 19.2 * 1vw);
+        border-radius: calc(32 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__right {
+        max-width: calc(721 / 19.2 * 1vw);
+        row-gap: calc(48 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards {
+        row-gap: calc(27 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option {
+        font-size: calc(26 / 19.2 * 1vw);
+        border-radius: calc(21 / 19.2 * 1vw);
+        padding: calc(20 / 19.2 * 1vw);
+        width: calc(347 / 19.2 * 1vw);
+        height: calc(123 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-1 {
+        width: calc(88 / 19.2 * 1vw);
+        height: calc(111 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-2 {
+        width: calc(53 / 19.2 * 1vw);
+        height: calc(103 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-3 {
+        width: calc(117 / 19.2 * 1vw);
+        height: calc(105 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-4 {
+        width: calc(65 / 19.2 * 1vw);
+        height: calc(103 / 19.2 * 1vw);
+    }
+
+    .get-help-middle__text {
+        font-size: calc(24 / 19.2 * 1vw);
+        border: calc(2 / 19.2 * 1vw) solid #e5edff;
+        border-radius: calc(24 / 19.2 * 1vw);
+        padding: calc(26.5 / 19.2 * 1vw) calc(60.5 / 19.2 * 1vw);
+    }
+
+    /* Вопросы */
+    .get-help-questions__wrapper {
+        row-gap: calc(80 / 19.2 * 1vw);
+    }
+
+    .get-help-questions__questions-block {
+        row-gap: calc(24 / 19.2 * 1vw);
+    }
+
+    .get-help-questions__ask {
+        padding: calc(24 / 19.2 * 1vw) calc(24 / 19.2 * 1vw)
+            calc(24 / 19.2 * 1vw) calc(48 / 19.2 * 1vw);
+        border: calc(2 / 19.2 * 1vw) solid #7599e2;
+        border-radius: calc(64 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .get-help-questions__ask img {
+        width: calc(64 / 19.2 * 1vw);
+        height: calc(64 / 19.2 * 1vw);
+    }
+
+    .get-help-questions__ask-content {
+        padding: 0 calc(48 / 19.2 * 1vw);
+        font-size: calc(20 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .page-get-help .title-1 {
+        font-size: 86px;
+    }
+
+    /* Получить помощь промо */
+    .page-get-help__wrapper {
+        border-radius: 43px;
+        padding: 60px;
+    }
+
+    .page-get-help__left {
+        max-width: 541px;
+        row-gap: 53px;
+    }
+
+    .page-get-help__text {
+        row-gap: 27px;
+        font-size: 16px;
+    }
+
+    .page-get-help__form {
+        padding: 42px 36px;
+        width: 452px;
+        height: 452.8px;
+        border-radius: 21px;
+        row-gap: 31px;
+    }
+
+    .page-get-help__form input,
+    .page-get-help__form textarea,
+    .page-get-help__form .page-get-help__input,
+    .page-get-help__form .page-get-help__textarea {
+        font-size: 12px;
+    }
+
+    .page-get-help__input,
+    .page-get-help__textarea {
+        padding: 13px 11px;
+        border-radius: 13px;
+    }
+
+    .page-get-help__textarea {
+        height: 108px;
+    }
+
+    .page-get-help__checkbox {
+        column-gap: 10px;
+        font-size: 12px;
+    }
+
+    .custom-checkbox {
+        border-radius: 5px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .page-get-help__form .page-get-help__form-btn {
+        font-size: 12px;
+        width: 171px;
+        height: 40px;
+        border-radius: 37px;
+    }
+
+    /* Сообщение об оправке */
+    .thank-you-message {
+        width: 452px;
+        height: 452.8px;
+        border-radius: 21px;
+    }
+
+    .thank-you-message__block {
+        row-gap: 12px;
+        width: 290px;
+    }
+
+    .thank-you-message__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .thank-you-message__title {
+        font-size: 22px;
+    }
+
+    .thank-you-message__text {
+        font-size: 16px;
+    }
+
+    /* Получить помощь инфо */
+    .get-help-middle__wrapper {
+        row-gap: 27px;
+    }
+
+    .get-help-middle__left img {
+        border-radius: 21px;
+        width: 656px;
+        height: 420px;
+    }
+
+    .get-help-middle__right {
+        max-width: 481px;
+        row-gap: 32px;
+    }
+
+    .get-help-middle__cards {
+        row-gap: 18px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option {
+        font-size: 17px;
+        border-radius: 14px;
+        padding: 13px;
+        width: 231px;
+        height: 82px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-1 {
+        width: 59px;
+        height: 75px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-2 {
+        width: 35px;
+        height: 70px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-3 {
+        width: 79px;
+        height: 71px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-4 {
+        width: 44px;
+        height: 70px;
+    }
+
+    .get-help-middle__text {
+        font-size: 16px;
+        border: 1.33px solid #e5edff;
+        border-radius: 16px;
+        padding: 18px 40px;
+    }
+
+    /* Вопросы */
+    .get-help-questions__wrapper {
+        row-gap: 53px;
+    }
+
+    .get-help-questions__questions-block {
+        row-gap: 16px;
+    }
+
+    .get-help-questions__ask {
+        padding: 16px 16px 16px 32px;
+        border: 1.33px solid #7599e2;
+        border-radius: 43px;
+        font-size: 16px;
+    }
+
+    .get-help-questions__ask img {
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+    }
+
+    .get-help-questions__ask-content {
+        padding: 0 32px;
+        font-size: 20px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .page-get-help .title-1 {
+        font-size: calc(86 / 12.8 * 1vw);
+    }
+
+    /* Получить помощь промо */
+    .page-get-help__wrapper {
+        border-radius: calc(43 / 12.8 * 1vw);
+        padding: calc(60 / 12.8 * 1vw);
+    }
+
+    .page-get-help__left {
+        max-width: calc(541 / 12.8 * 1vw);
+        row-gap: calc(53 / 12.8 * 1vw);
+    }
+
+    .page-get-help__text {
+        row-gap: calc(27 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .page-get-help__form {
+        padding: calc(42 / 12.8 * 1vw) calc(36 / 12.8 * 1vw);
+        width: calc(452 / 12.8 * 1vw);
+        height: calc(452.8 / 12.8 * 1vw);
+        border-radius: calc(21 / 12.8 * 1vw);
+        row-gap: calc(31 / 12.8 * 1vw);
+    }
+
+    .page-get-help__form input,
+    .page-get-help__form textarea,
+    .page-get-help__form .page-get-help__input,
+    .page-get-help__form .page-get-help__textarea {
+        font-size: calc(12 / 12.8 * 1vw);
+    }
+
+    .page-get-help__input,
+    .page-get-help__textarea {
+        padding: calc(13 / 12.8 * 1vw) calc(11 / 12.8 * 1vw);
+        border-radius: calc(13 / 12.8 * 1vw);
+    }
+
+    .page-get-help__textarea {
+        height: calc(108 / 12.8 * 1vw);
+    }
+
+    .page-get-help__checkbox {
+        column-gap: calc(10 / 12.8 * 1vw);
+        font-size: calc(12 / 12.8 * 1vw);
+    }
+
+    .custom-checkbox {
+        border-radius: calc(5 / 12.8 * 1vw);
+        width: calc(16 / 12.8 * 1vw);
+        height: calc(16 / 12.8 * 1vw);
+    }
+
+    .page-get-help__form .page-get-help__form-btn {
+        font-size: calc(12 / 12.8 * 1vw);
+        width: calc(171 / 12.8 * 1vw);
+        height: calc(40 / 12.8 * 1vw);
+        border-radius: calc(37 / 12.8 * 1vw);
+    }
+
+    /* Сообщение об оправке */
+    .thank-you-message {
+        width: calc(452 / 12.8 * 1vw);
+        height: calc(452.8 / 12.8 * 1vw);
+        border-radius: calc(21 / 12.8 * 1vw);
+    }
+
+    .thank-you-message__block {
+        row-gap: calc(12 / 12.8 * 1vw);
+        width: calc(290 / 12.8 * 1vw);
+    }
+
+    .thank-you-message__img {
+        width: calc(60 / 12.8 * 1vw);
+        height: calc(60 / 12.8 * 1vw);
+    }
+
+    .thank-you-message__title {
+        font-size: calc(22 / 12.8 * 1vw);
+    }
+
+    .thank-you-message__text {
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    /* Получить помощь инфо */
+    .get-help-middle__wrapper {
+        row-gap: calc(27 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__left img {
+        border-radius: calc(21 / 12.8 * 1vw);
+        width: calc(656 / 12.8 * 1vw);
+        height: calc(420 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__right {
+        max-width: calc(481 / 12.8 * 1vw);
+        row-gap: calc(32 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards {
+        row-gap: calc(18 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option {
+        font-size: calc(17 / 12.8 * 1vw);
+        border-radius: calc(14 / 12.8 * 1vw);
+        padding: calc(13 / 12.8 * 1vw);
+        width: calc(231 / 12.8 * 1vw);
+        height: calc(82 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-1 {
+        width: calc(59 / 12.8 * 1vw);
+        height: calc(75 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-2 {
+        width: calc(35 / 12.8 * 1vw);
+        height: calc(70 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-3 {
+        width: calc(79 / 12.8 * 1vw);
+        height: calc(71 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-4 {
+        width: calc(44 / 12.8 * 1vw);
+        height: calc(70 / 12.8 * 1vw);
+    }
+
+    .get-help-middle__text {
+        font-size: calc(16 / 12.8 * 1vw);
+        border-radius: calc(16 / 12.8 * 1vw);
+        padding: calc(18 / 12.8 * 1vw) calc(40 / 12.8 * 1vw);
+    }
+
+    /* Вопросы */
+    .get-help-questions__wrapper {
+        row-gap: calc(53 / 12.8 * 1vw);
+    }
+
+    .get-help-questions__questions-block {
+        row-gap: calc(16 / 12.8 * 1vw);
+    }
+
+    .get-help-questions__ask {
+        padding: calc(16 / 12.8 * 1vw) calc(16 / 12.8 * 1vw)
+            calc(16 / 12.8 * 1vw) calc(32 / 12.8 * 1vw);
+        border-radius: calc(43 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .get-help-questions__ask img {
+        width: calc(42 / 12.8 * 1vw);
+        height: calc(42 / 12.8 * 1vw);
+        cursor: pointer;
+    }
+
+    .get-help-questions__ask-content {
+        padding: 0 calc(42 / 12.8 * 1vw);
+        font-size:  calc(20 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .page-get-help .title-1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .page-get-help__wrapper {
+        padding: 25px;
+        border-radius: 25px;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .page-get-help__left {
+        max-width: 100%;
+        row-gap: 40px;
+    }
+
+    .page-get-help__text {
+        row-gap: 20px;
+        font-size: 12px;
+    }
+
+    .page-get-help__form {
+        padding: 35px 20px;
+        width: 100%;
+        height: 440.8px;
+        border-radius: 21px;
+        row-gap: 31px;
+    }
+
+    .page-get-help__form input,
+    .page-get-help__form textarea,
+    .page-get-help__form .page-get-help__input,
+    .page-get-help__form .page-get-help__textarea {
+        font-size: 12px;
+    }
+
+    .page-get-help__input,
+    .page-get-help__textarea {
+        padding: 13px 11px;
+        border-radius: 13px;
+    }
+
+    .page-get-help__textarea {
+        height: 108px;
+    }
+
+    .page-get-help__checkbox {
+        column-gap: 13px;
+        font-size: 12px;
+    }
+
+    .page-get-help__form .page-get-help__form-btn {
+        font-size: 12px;
+        border: 0.67px solid #7599e2;
+        border-radius: 37px;
+        margin: 0 auto;
+        width: 171px;
+        height: 40px;
+    }
+
+    .custom-checkbox {
+        border-radius: 5px;
+        border: 0.67px solid #7599e2;
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+    }
+
+    .custom-checkbox::before {
+        width: 18px;
+        height: 18px;
+    }
+
+    .real-checkbox:focus + .custom-checkbox {
+        box-shadow: 0 0 0 1px #7599e2, 0 0 10px #e5edff;
+    }
+
+    /* Сообщение об оправке */
+    .thank-you-message {
+        width: 100%;
+        height: 440.8px;
+        border-radius: 21px;
+        background-size: 250px 120px;
+    }
+
+    .thank-you-message__block {
+        row-gap: 12px;
+        width: 300px;
+    }
+
+    .thank-you-message__img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .thank-you-message__title {
+        font-size: 22px;
+    }
+
+    .thank-you-message__text {
+        font-size: 16px;
+    }
+
+    /* Получить помощь инфо */
+    .get-help-middle__wrapper {
+        row-gap: 30px;
+    }
+
+    .get-help-middle__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .get-help-middle__left img {
+        width: 100%;
+        height: auto;
+        border-radius: 32px;
+    }
+
+    .get-help-middle__right {
+        max-width: 100%;
+        row-gap: 40px;
+    }
+
+    .get-help-middle .title-2 {
+        font-size: 50px;
+    }
+
+    .get-help-middle__cards {
+        width: 100%;
+        row-gap: 18px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option {
+        font-size: 17px;
+        border-radius: 14px;
+        padding: 13px;
+        width: 48.5%;
+        height: 82px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option p {
+        width: 45%;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-1 {
+        width: 59px;
+        height: 74px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-2 {
+        width: 35px;
+        height: 69px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-3 {
+        width: 77px;
+        height: 73px;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-4 {
+        width: 53px;
+        height: 69px;
+    }
+
+    .get-help-middle__text {
+        font-size: 16px;
+        border: 1.33px solid #e5edff;
+        border-radius: 16px;
+        padding: 18.5px;
+    }
+
+    /* Вопросы */
+    .get-help-questions__wrapper {
+        row-gap: 20px;
+    }
+
+    .get-help-questions__questions-block {
+        row-gap: 16px;
+    }
+
+    .get-help-questions__ask {
+        padding: 16px 16px 16px 32px;
+        border: 1.33px solid #7599e2;
+        border-radius: 43px;
+        font-size: 16px;
+    }
+
+    .get-help-questions__ask img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .get-help-questions__ask-content {
+        padding: 0 32px;
+        font-size: 18px;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    .page-get-help .title-1 {
+        font-size: calc(50 / 4.3 * 1vw);
+    }
+
+    .page-get-help__wrapper {
+        padding: calc(25 / 4.3 * 1vw);
+        border-radius: calc(25 / 4.3 * 1vw);
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .page-get-help__left {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .page-get-help__text {
+        row-gap: calc(20 / 4.3 * 1vw);
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .page-get-help__form {
+        padding: calc(35 / 4.3 * 1vw) calc(20 / 4.3 * 1vw);
+        border-radius: calc(21 / 4.3 * 1vw);
+        height: calc(440.8 / 4.3 * 1vw);
+        row-gap: calc(31 / 4.3 * 1vw);
+    }
+
+    .page-get-help__form input,
+    .page-get-help__form textarea,
+    .page-get-help__form .page-get-help__input,
+    .page-get-help__form .page-get-help__textarea {
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .page-get-help__input,
+    .page-get-help__textarea {
+        padding: calc(13 / 4.3 * 1vw) calc(11 / 4.3 * 1vw);
+        border-radius: calc(13 / 4.3 * 1vw);
+    }
+
+    .page-get-help__textarea {
+        height: calc(108 / 4.3 * 1vw);
+    }
+
+    .page-get-help__checkbox {
+        column-gap: calc(13 / 4.3 * 1vw);
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .page-get-help__form .page-get-help__form-btn {
+        font-size: calc(12 / 4.3 * 1vw);
+        border-radius: calc(37 / 4.3 * 1vw);
+        width: calc(171 / 4.3 * 1vw);
+        height: calc(40 / 4.3 * 1vw);
+    }
+
+    .custom-checkbox {
+        border-radius: calc(5 / 4.3 * 1vw);
+        width: calc(18 / 4.3 * 1vw);
+        height: calc(18 / 4.3 * 1vw);
+        flex-shrink: 0;
+    }
+
+    .custom-checkbox::before {
+        width: calc(18 / 4.3 * 1vw);
+        height: calc(18 / 4.3 * 1vw);
+    }
+
+    /* Сообщение об оправке */
+    .thank-you-message {
+        height: calc(440.8 / 4.3 * 1vw);
+        border-radius: calc(21 / 4.3 * 1vw);
+        background-size: calc(250 / 4.3 * 1vw) calc(120 / 4.3 * 1vw);
+    }
+
+    .thank-you-message__block {
+        row-gap: calc(12 / 4.3 * 1vw);
+        width: calc(300 / 4.3 * 1vw);
+    }
+
+    .thank-you-message__img {
+        width: calc(60 / 4.3 * 1vw);
+        height: calc(60 / 4.3 * 1vw);
+    }
+
+    .thank-you-message__title {
+        font-size: calc(22 / 4.3 * 1vw);
+    }
+
+    .thank-you-message__text {
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    /* Получить помощь инфо */
+    .get-help-middle__wrapper {
+        row-gap: calc(30 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__content {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__left img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__right {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .get-help-middle .title-2 {
+        font-size: calc(50 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards {
+        row-gap: calc(18 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option {
+        font-size: calc(17 / 4.3 * 1vw);
+        border-radius: calc(14 / 4.3 * 1vw);
+        padding: calc(13 / 4.3 * 1vw);
+        width: 48.5%;
+        height: calc(82 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option p {
+        width: 45%;
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-1 {
+        width: calc(59 / 4.3 * 1vw);
+        height: calc(74 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-2 {
+        width: calc(35 / 4.3 * 1vw);
+        height: calc(69 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-3 {
+        width: calc(77 / 4.3 * 1vw);
+        height: calc(73 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__cards .get-help-middle__option .option-btn-4 {
+        width: calc(53 / 4.3 * 1vw);
+        height: calc(69 / 4.3 * 1vw);
+    }
+
+    .get-help-middle__text {
+        font-size: calc(16 / 4.3 * 1vw);
+        border-radius: calc(16 / 4.3 * 1vw);
+        padding: calc(18.5 / 4.3 * 1vw);
+    }
+
+    /* Вопросы */
+    .get-help-questions__wrapper {
+        row-gap: calc(20 / 4.3 * 1vw);
+    }
+
+    .get-help-questions__questions-block {
+        row-gap: calc(16 / 4.3 * 1vw);
+    }
+
+    .get-help-questions__ask {
+        padding: calc(16 / 4.3 * 1vw) calc(16 / 4.3 * 1vw) calc(16 / 4.3 * 1vw)
+            calc(32 / 4.3 * 1vw);
+        border-radius: calc(43 / 4.3 * 1vw);
+        font-size: calc(16 / 4.3 * 1vw);
+    }
+
+    .get-help-questions__ask img {
+        width: calc(42 / 4.3 * 1vw);
+        height: calc(42 / 4.3 * 1vw);
+    }
+
+    .get-help-questions__ask-content {
+        padding: 0 calc(42 / 4.3 * 1vw);
+        font-size: calc(18 / 4.3 * 1vw);
+    }
+}

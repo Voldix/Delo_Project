@@ -1,0 +1,398 @@
+.reports-promo .desktop-only {
+    display: block;
+}
+
+.reports-promo .mobile-only {
+    display: none;
+}
+
+.reports-promo {
+    margin-bottom: 100px;
+}
+
+.reports-promo__wrapper {
+    padding: 78px 69px;
+    background-color: #e5edff;
+    border-radius: 64px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.reports-promo__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 48px;
+    max-width: 835px;
+}
+
+.reports-promo__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.reports-promo__right img {
+    border-radius: 64px;
+}
+
+.reports-docs__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 33px;
+}
+
+.reports-docs__top-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 29px;
+}
+
+.reports-docs__btn {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #7599e2;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+    column-gap: 15px;
+
+    height: 46px;
+    border: 1.6px solid #7599e2;
+    border-radius: 80px;
+    padding: 0 21px;
+}
+
+.reports-docs__btn svg {
+    fill: #7599e2;
+}
+
+.reports-docs__btn--active {
+    color: #fff;
+    background-color: #7599e2;
+}
+
+.reports-docs__btn--active svg {
+    fill: #fff;
+}
+
+.reports-docs__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .reports-promo {
+        margin-bottom: calc(100 / 19.2 * 1vw);
+    }
+
+    .reports-promo__wrapper {
+        border-radius: calc(64 / 19.2 * 1vw);
+        column-gap: calc(48 / 19.2 * 1vw);
+    }
+
+    .reports-promo__left {
+        row-gap: calc(48 / 19.2 * 1vw);
+        max-width: calc(835 / 19.2 * 1vw);
+    }
+
+    .reports-promo__text {
+        row-gap: calc(40 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .reports-promo__right img {
+        border-radius: calc(64 / 19.2 * 1vw);
+        width: calc(797 / 19.2 * 1vw);
+        height: calc(572 / 19.2 * 1vw);
+    }
+
+    .reports-docs__wrapper {
+        row-gap: calc(33 / 19.2 * 1vw);
+    }
+
+    .reports-docs__top-btns {
+        column-gap: calc(29 / 19.2 * 1vw);
+    }
+
+    .reports-docs__btn {
+        font-size: calc(22 / 19.2 * 1vw);
+        column-gap: calc(15 / 19.2 * 1vw);
+        height: calc(46 / 19.2 * 1vw);
+        border: 1.6px solid #7599e2;
+        border-radius: calc(80 / 19.2 * 1vw);
+        padding: 0 calc(21 / 19.2 * 1vw);
+    }
+
+    .reports-docs__content {
+        row-gap: calc(30 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .reports-promo {
+        margin-bottom: 67px;
+    }
+
+    .reports-promo__wrapper {
+        padding: 52px 46px;
+        border-radius: 43px;
+    }
+
+    .reports-promo__left {
+        row-gap: 32px;
+        max-width: 557px;
+    }
+
+    .reports-promo__text {
+        row-gap: 27px;
+        font-size: 16px;
+    }
+
+    .reports-promo__right img {
+        border-radius: 43px;
+        width: 531px;
+        height: 381px;
+    }
+
+    .reports-docs__wrapper {
+        row-gap: 22px;
+    }
+
+    .reports-docs__top-btns {
+        column-gap: 19px;
+    }
+
+    .reports-docs__btn {
+        font-size: 14px;
+        column-gap: 9px;
+        height: 31px;
+        border: 1.07px solid #7599e2;
+        border-radius: 53px;
+        padding: 0 14px;
+    }
+
+    .reports-docs__btn svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .reports-docs__content {
+        row-gap: 21px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .reports-promo {
+        margin-bottom: calc(67 / 12.8 * 1vw);
+    }
+
+    .reports-promo__wrapper {
+        padding: calc(52 / 12.8 * 1vw) calc(46 / 12.8 * 1vw);
+        border-radius: calc(43 / 12.8 * 1vw);
+    }
+
+    .reports-promo__left {
+        row-gap: calc(32 / 12.8 * 1vw);
+        max-width: calc(557 / 12.8 * 1vw);
+    }
+
+    .reports-promo__text {
+        row-gap: calc(27 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .reports-promo__right img {
+        border-radius: calc(43 / 12.8 * 1vw);
+        width: calc(531 / 12.8 * 1vw);
+        height: calc(381 / 12.8 * 1vw);
+    }
+
+    .reports-docs__wrapper {
+        row-gap: calc(22 / 12.8 * 1vw);
+    }
+
+    .reports-docs__top-btns {
+        column-gap: calc(19 / 12.8 * 1vw);
+    }
+
+    .reports-docs__btn {
+        font-size: calc(14 / 12.8 * 1vw);
+        column-gap: calc(9 / 12.8 * 1vw);
+        height: calc(31 / 12.8 * 1vw);
+        border-radius: calc(53 / 12.8 * 1vw);
+        padding: 0 calc(14 / 12.8 * 1vw);
+    }
+
+    .reports-docs__btn svg {
+        width: calc(23 / 12.8 * 1vw);
+        height: calc(23 / 12.8 * 1vw);
+    }
+
+    .reports-docs__content {
+        row-gap: calc(21 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 570px;
+    }
+
+    .reports-promo .desktop-only {
+        display: none;
+    }
+
+    .reports-promo .mobile-only {
+        display: block;
+    }
+
+    .reports-promo {
+        margin-bottom: 50px;
+    }
+
+    .reports-promo__wrapper {
+        padding: 25px;
+        border-radius: 25px;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .reports-promo__left {
+        row-gap: 40px;
+        max-width: unset;
+    }
+
+    .reports-promo__text {
+        row-gap: 20px;
+        font-size: 12px;
+    }
+
+    .reports-promo__left button {
+        width: 100%;
+    }
+
+    .reports-promo__right img {
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+    }
+
+    .reports-docs__wrapper {
+        row-gap: 33px;
+    }
+
+    .reports-docs__top-btns {
+        flex-wrap: wrap;
+        column-gap: 29px;
+        row-gap: 15px;
+    }
+
+    .reports-docs__btn {
+        font-size: 22px;
+        column-gap: 13px;
+        height: 46px;
+        border: 1.6px solid #7599e2;
+        border-radius: 80px;
+        padding: 0 21px;
+    }
+
+    .reports-docs__btn svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .reports-docs__content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .reports-docs__content .docs__report {
+        padding-top: 30px;
+        row-gap: 40px;
+    }
+
+    .reports-docs__content .docs__report-text .docs__report-text-1 {
+        font-size: 22px;
+        line-height: 1.12;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    .reports-promo {
+        margin-bottom: calc(50 / 4.3 * 1vw);
+    }
+
+    .reports-promo__wrapper {
+        padding: calc(25 / 4.3 * 1vw);
+        border-radius: calc(25 / 4.3 * 1vw);
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .reports-promo__left {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .reports-promo__text {
+        row-gap: calc(20 / 4.3 * 1vw);
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .reports-promo__right img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    .reports-docs__wrapper {
+        row-gap: calc(33 / 4.3 * 1vw);
+    }
+
+    .reports-docs__top-btns {
+        column-gap: calc(29 / 4.3 * 1vw);
+        row-gap: calc(15 / 4.3 * 1vw);
+    }
+
+    .reports-docs__btn {
+        font-size: calc(22 / 4.3 * 1vw);
+        column-gap: calc(13 / 4.3 * 1vw);
+        height: calc(46 / 4.3 * 1vw);
+        border-radius: calc(80 / 4.3 * 1vw);
+        padding: 0 calc(21 / 4.3 * 1vw);
+    }
+
+    .reports-docs__btn svg {
+        width: calc(35 / 4.3 * 1vw);
+        height: calc(35 / 4.3 * 1vw);
+    }
+
+    .reports-docs__content {
+        row-gap: calc(50 / 4.3 * 1vw) 30;
+    }
+
+    .reports-docs__content .docs__report {
+        padding-top: calc(30 / 4.3 * 1vw);
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .reports-docs__content .docs__report-text .docs__report-text-1 {
+        font-size: calc(22 / 4.3 * 1vw);
+    }
+}

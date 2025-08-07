@@ -1,0 +1,598 @@
+/* Кому помогли промо */
+.pomogli-promo__wrapper {
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 64px;
+    background-color: #e5edff;
+}
+
+.pomogli-promo__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+    max-width: 812px;
+}
+
+.pomogli-promo__middle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.pomogli-promo__text {
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.pomogli-promo__bottom {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.pomogli-promo__bottom .pomogli-promo__btn {
+    height: 52px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.pomogli-promo__bottom .pomogli-promo__btn-arrow {
+    border: 1px solid #fff;
+}
+
+.pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+    width: 52px;
+    height: 52px;
+}
+
+.pomogli-promo__right img {
+    border-radius: 64px;
+    width: 756px;
+    height: 683px;
+}
+
+/* Кому помогли карточки */
+.pomogli-cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 60px;
+    justify-content: space-between;
+}
+
+.pomogli-card {
+    width: 581px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+.pomogli-card img {
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    width: 581px;
+    height: 470px;
+}
+
+.pomogli-card__text {
+    padding: 0 28px 37px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 19px;
+}
+
+.pomogli-card__title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+}
+
+.pomogli-card__text p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(51, 51, 51, 0.5);
+}
+
+.pomogli-cards .pomogli-card__img--special {
+    width: 581px;
+    height: 675px;
+    border-radius: 28px;
+}
+
+.pomogli-card--special {
+    position: relative;
+}
+
+.pomogli-card--special .pomogli-card__text--special {
+    position: absolute;
+    bottom: 6%;
+    left: 5%;
+
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 23px;
+    width: 524px;
+}
+
+/* Резина */
+@media (max-width: 1919px) {
+    .pomogli-promo .title-1 {
+        font-size: calc(130 / 19.2 * 1vw);
+    }
+
+    /* Кому помогли промо */
+    .pomogli-promo__wrapper {
+        padding: calc(90 / 19.2 * 1vw);
+        border-radius: calc(64 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__left {
+        row-gap: calc(80 / 19.2 * 1vw);
+        max-width: calc(812 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__middle {
+        row-gap: calc(15 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__text {
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__bottom {
+        column-gap: calc(30 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn {
+        height: calc(52 / 19.2 * 1vw);
+        font-size: calc(24 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+        width: calc(52 / 19.2 * 1vw);
+        height: calc(52 / 19.2 * 1vw);
+    }
+
+    .pomogli-promo__right img {
+        border-radius: calc(64 / 19.2 * 1vw);
+        width: calc(756 / 19.2 * 1vw);
+        height: calc(683 / 19.2 * 1vw);
+    }
+
+    /* Кому помогли карточки */
+    .pomogli-cards__wrapper {
+        row-gap: calc(60 / 19.2 * 1vw);
+    }
+
+    .pomogli-card {
+        width: calc(581 / 19.2 * 1vw);
+        row-gap: calc(23 / 19.2 * 1vw);
+        border-radius: calc(28 / 19.2 * 1vw);
+    }
+
+    .pomogli-card img {
+        border-top-left-radius: calc(28 / 19.2 * 1vw);
+        border-top-right-radius: calc(28 / 19.2 * 1vw);
+        width: calc(581 / 19.2 * 1vw);
+        height: calc(470 / 19.2 * 1vw);
+    }
+
+    .pomogli-card__text {
+        padding: 0 calc(28 / 19.2 * 1vw) calc(37 / 19.2 * 1vw);
+        row-gap: calc(19 / 19.2 * 1vw);
+    }
+
+    .pomogli-card__title {
+        font-size: calc(32 / 19.2 * 1vw);
+    }
+
+    .pomogli-card__text p {
+        font-size: calc(18 / 19.2 * 1vw);
+    }
+
+    .pomogli-cards .pomogli-card__img--special {
+        width: calc(581 / 19.2 * 1vw);
+        height: calc(675 / 19.2 * 1vw);
+        border-radius: calc(28 / 19.2 * 1vw);
+    }
+
+    .pomogli-card--special .pomogli-card__text--special {
+        position: absolute;
+        bottom: 6%;
+        left: 5%;
+
+        border-radius: calc(35 / 19.2 * 1vw);
+        padding: calc(23 / 19.2 * 1vw);
+        width: calc(524 / 19.2 * 1vw);
+    }
+}
+
+/* первая точка перелома */
+@media (max-width: 1439px) {
+    .pomogli-promo .title-1 {
+        font-size: 86px;
+    }
+
+    /* Кому помогли промо */
+    .pomogli-promo__wrapper {
+        padding: 60px;
+        border-radius: 43px;
+    }
+
+    .pomogli-promo__left {
+        row-gap: 53px;
+        max-width: 541px;
+    }
+
+    .pomogli-promo__middle {
+        row-gap: 10px;
+    }
+
+    .pomogli-promo__text {
+        font-size: 16px;
+    }
+
+    .pomogli-promo__bottom {
+        column-gap: 20px;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn {
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow {
+        border: 1px solid #fff;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .pomogli-promo__right img {
+        border-radius: 43px;
+        width: 504px;
+        height: 455px;
+    }
+
+    /* Кому помогли карточки */
+    .pomogli-cards__wrapper {
+        row-gap: 60px;
+        justify-content: space-between;
+    }
+
+    .pomogli-card {
+        width: 387px;
+        row-gap: 16px;
+        border-radius: 19px;
+    }
+
+    .pomogli-card img {
+        border-top-left-radius: 19px;
+        border-top-right-radius: 19px;
+        width: 387px;
+        height: 313px;
+    }
+
+    .pomogli-card__text {
+        padding: 0 19px 25px;
+        row-gap: 12px;
+    }
+
+    .pomogli-card__title {
+        font-size: 21px;
+    }
+
+    .pomogli-card__text p {
+        font-size: 12px;
+    }
+
+    .pomogli-cards .pomogli-card__img--special {
+        width: 387px;
+        height: 450px;
+        border-radius: 19px;
+    }
+
+    .pomogli-card--special .pomogli-card__text--special {
+        position: absolute;
+        bottom: 6%;
+        left: 5%;
+        border-radius: 23px;
+        padding: 15px;
+        width: 349px;
+    }
+}
+
+/* Резина */
+@media (max-width: 1279px) {
+    .pomogli-promo .title-1 {
+        font-size: calc(86 / 12.8 * 1vw);
+    }
+
+    /* Кому помогли промо */
+    .pomogli-promo__wrapper {
+        padding: calc(60 / 12.8 * 1vw);
+        border-radius: calc(43 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__left {
+        row-gap: calc(53 / 12.8 * 1vw);
+        max-width: calc(541 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__middle {
+        row-gap: calc(10 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__text {
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__bottom {
+        column-gap: calc(20 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn {
+        height: calc(34 / 12.8 * 1vw);
+        font-size: calc(16 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+        width: calc(34 / 12.8 * 1vw);
+        height: calc(34 / 12.8 * 1vw);
+    }
+
+    .pomogli-promo__right img {
+        border-radius: calc(43 / 12.8 * 1vw);
+        width: calc(504 / 12.8 * 1vw);
+        height: calc(455 / 12.8 * 1vw);
+    }
+
+    /* Кому помогли карточки */
+    .pomogli-cards__wrapper {
+        row-gap: calc(60 / 12.8 * 1vw);
+    }
+
+    .pomogli-card {
+        width: calc(387 / 12.8 * 1vw);
+        row-gap: calc(16 / 12.8 * 1vw);
+        border-radius: calc(19 / 12.8 * 1vw);
+    }
+
+    .pomogli-card img {
+        border-top-left-radius: calc(19 / 12.8 * 1vw);
+        border-top-right-radius: calc(19 / 12.8 * 1vw);
+        width: calc(387 / 12.8 * 1vw);
+        height: calc(313 / 12.8 * 1vw);
+    }
+
+    .pomogli-card__text {
+        padding: 0 calc(19 / 12.8 * 1vw) calc(25 / 12.8 * 1vw);
+        row-gap: calc(12 / 12.8 * 1vw);
+    }
+
+    .pomogli-card__title {
+        font-size: calc(21 / 12.8 * 1vw);
+    }
+
+    .pomogli-card__text p {
+        font-size: calc(12 / 12.8 * 1vw);
+    }
+
+    .pomogli-cards .pomogli-card__img--special {
+        width: calc(387 / 12.8 * 1vw);
+        height: calc(450 / 12.8 * 1vw);
+        border-radius: calc(19 / 12.8 * 1vw);
+    }
+
+    .pomogli-card--special .pomogli-card__text--special {
+        position: absolute;
+        bottom: 6%;
+        left: 5%;
+        border-radius: calc(23 / 12.8 * 1vw);
+        padding: calc(15 / 12.8 * 1vw);
+        width: calc(349 / 12.8 * 1vw);
+    }
+}
+
+/* Моб версия */
+@media (max-width: 767px) {
+    .pomogli-promo .title-1 {
+        font-size: 50px;
+    }
+
+    /* Кому помогли промо */
+    .pomogli-promo__wrapper {
+        padding: 25px;
+        flex-direction: column-reverse;
+        row-gap: 40px;
+        border-radius: 25px;
+    }
+
+    .pomogli-promo__left {
+        row-gap: 40px;
+        max-width: 100%;
+    }
+
+    .pomogli-promo__middle {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+
+    /* .pomogli-promo__wrapper .title-2 {
+        font-size: 20px;
+    } */
+
+    .pomogli-promo__text {
+        font-size: 12px;
+    }
+
+    .pomogli-promo__bottom {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn {
+        width: 100%;
+        height: 52px;
+        font-size: 20px;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow {
+        border: 1px solid #fff;
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .pomogli-promo__right img {
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Кому помогли карточки */
+    .pomogli-cards__wrapper {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .pomogli-card {
+        width: 100%;
+        row-gap: 15px;
+        border-radius: 18px;
+    }
+
+    .pomogli-card img {
+        border-top-left-radius: 18px;
+        border-top-right-radius: 18px;
+        width: 100%;
+        height: auto;
+    }
+
+    .pomogli-card__text {
+        padding: 0 18px 24px;
+        row-gap: 12px;
+    }
+
+    .pomogli-card__title {
+        font-size: 21px;
+        line-height: 1.2;
+    }
+
+    .pomogli-card__text p {
+        font-size: 12px;
+    }
+
+    .pomogli-cards .pomogli-card__img--special {
+        width: 100%;
+        height: auto;
+        border-radius: 18px;
+    }
+
+    .pomogli-card--special {
+        position: relative;
+    }
+    
+    .pomogli-card--special .pomogli-card__text--special {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        border-radius: 18px;
+        padding: 15px;
+        width: 90%;
+    }
+}
+
+/* Резина */
+@media (max-width: 429px) {
+    .pomogli-promo .title-1 {
+        font-size: calc(50 / 4.3 * 1vw);
+    }
+
+    /* Кому помогли промо */
+    .pomogli-promo__wrapper {
+        padding: calc(25 / 4.3 * 1vw);
+        row-gap: calc(40 / 4.3 * 1vw);
+        border-radius: calc(25 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__left {
+        row-gap: calc(40 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__middle {
+        row-gap: calc(5 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__text {
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__bottom {
+        row-gap: calc(15 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn {
+        height: calc(52 / 4.3 * 1vw);
+        font-size: calc(20 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__bottom .pomogli-promo__btn-arrow img {
+        width: calc(52 / 4.3 * 1vw);
+        height: calc(52 / 4.3 * 1vw);
+    }
+
+    .pomogli-promo__right img {
+        border-radius: calc(32 / 4.3 * 1vw);
+    }
+
+    /* Кому помогли карточки */
+    .pomogli-cards__wrapper {
+        row-gap: calc(30 / 4.3 * 1vw);
+    }
+
+    .pomogli-card {
+        row-gap: calc(15 / 4.3 * 1vw);
+        border-radius: calc(18 / 4.3 * 1vw);
+    }
+
+    .pomogli-card img {
+        border-top-left-radius: calc(18 / 4.3 * 1vw);
+        border-top-right-radius: calc(18 / 4.3 * 1vw);
+    }
+
+    .pomogli-card__text {
+        padding: 0 calc(18 / 4.3 * 1vw) calc(24 / 4.3 * 1vw);
+        row-gap: calc(12 / 4.3 * 1vw);
+    }
+
+    .pomogli-card__title {
+        font-size: calc(21 / 4.3 * 1vw);
+    }
+
+    .pomogli-card__text p {
+        font-size: calc(12 / 4.3 * 1vw);
+    }
+
+    .pomogli-cards .pomogli-card__img--special {
+        border-radius: calc(18 / 4.3 * 1vw);
+    }
+    
+    .pomogli-card--special .pomogli-card__text--special {
+        border-radius: calc(18 / 4.3 * 1vw);
+        padding: calc(15 / 4.3 * 1vw);
+    }
+}
